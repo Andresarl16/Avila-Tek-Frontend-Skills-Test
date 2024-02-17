@@ -1,5 +1,6 @@
 import { Card } from "@/models/CardModel";
 import Button from "./Button";
+import RightArrowIcon from "../icons/RightArrowIcon";
 
 export default function Card({ card }: { card: Card }) {
   return (
@@ -15,7 +16,12 @@ export default function Card({ card }: { card: Card }) {
         {" "}
         {card.description}{" "}
       </p>
-      <Button text="View integration" type="tertiary" redirectTo=""></Button>
+      <Button
+        text="View integration"
+        type="tertiary"
+        redirectTo=""
+        icon={RightArrowIcon}
+      ></Button>
     </div>
   );
 }
