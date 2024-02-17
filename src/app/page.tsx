@@ -15,44 +15,53 @@ export default function Home() {
   };
 
   return (
-    <main className="">
+    <main className="overflow-x-hidden">
       <header className="grid grid-cols-12 mt-8 mb-32">
-        <div className="grid col-start-2 col-span-10 grid-cols-12 bg-bg-brand-section rounded-2xl">
-          <div className="col-start-3 col-span-8 pt-24 pb-48">
-            <h1 className="text-7xl text-text-brand-primary text-center font-semibold">
+        <div className="grid sm:col-start-2 col-span-12 sm:col-span-10 grid-cols-12 px-4 md:px-0 bg-bg-brand-section sm:rounded-2xl">
+          <div className="sm:col-start-3 col-span-12 sm:col-span-8 pt-16 sm:pt-24 pb-24 sm:pb-48">
+            <h1 className="text-4xl sm:text-7xl text-text-brand-primary text-center font-semibold">
               Grow your users. <br />
               <span className="text-text-brand-secondary">Smarter.</span>
             </h1>
-            <p className="mt-6 mb-12 font-xl text-text-brand-tertiary text-center">
+            <p className="mt-4 sm:mt-6 mb-10 sm:mb-12 font-lg sm:font-xl text-text-brand-tertiary text-center">
               Powerful, self-serve product and growth analytics to help you
               convert, engage, and retain more users. Trusted by over 4,000
               startups.
             </p>
-            <form action="" className="flex justify-center space-x-4">
-              <input type="text" />
-              <Button text="Get started" type="primary" redirectTo=""></Button>
+            <form action="" className="sm:flex justify-center sm:space-x-4">
+              <div>
+                <input type="text" className="h-12" />
+                <p className="mb-4 sm:mb-0 text-sm text-text-brand-tertiary">
+                  We care about your data in our{" "}
+                  <u className="cursor-pointer">privacy policy</u>.
+                </p>
+              </div>
+              <Button
+                text="Get started"
+                type="primary"
+                redirectTo=""
+                styles="h-fit w-full sm:w-auto"
+              ></Button>
             </form>
           </div>
         </div>
-        <div className="col-start-4 col-span-6 -mt-24 p-8 bg-bg-primary rounded-xl border-2 border-border-secondary drop-shadow-xl">
+        <div className="col-start-2 sm:col-start-4 col-span-10 sm:col-span-6 -mt-8 sm:-mt-24 p-8 bg-bg-primary rounded-xl border-2 border-border-secondary drop-shadow-xl">
           <h5 className="text-lg text-text-primary font-semibold">
             Users over time
           </h5>
-          <div className="relative h-96">
+          <div className="relative h-52 sm:h-96">
             <Image
               alt="Graphic of users over time"
               src={"/static/line-and-bar-chart.jpg"}
-              layout="fill"
-              objectFit="cover"
+              fill={true}
             ></Image>
           </div>
 
-          <div className="absolute -right-20 -bottom-9">
+          <div className="absolute w-48 sm:w-60 h-48 sm:h-60 -right-20 -bottom-9">
             <Image
               alt="Graphic of users over time"
               src={"/static/activity-gauge.png"}
-              width={240}
-              height={240}
+              fill={true}
             ></Image>
           </div>
         </div>
@@ -96,9 +105,8 @@ export default function Home() {
             <Image
               alt="Give us a shoot image"
               src={"/static/give-us-a-shoot.jpg"}
-              layout="fill"
-              objectFit="cover"
-              className="rounded-b-2xl lg:rounded-r-2xl"
+              fill={true}
+              className="object-cover rounded-b-2xl lg:rounded-r-2xl"
             />
           </div>
         </div>
