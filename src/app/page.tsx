@@ -16,6 +16,47 @@ export default function Home() {
 
   return (
     <main className="">
+      <header className="grid grid-cols-12 mt-8 mb-32">
+        <div className="grid col-start-2 col-span-10 grid-cols-12 bg-bg-brand-section rounded-2xl">
+          <div className="col-start-3 col-span-8 pt-24 pb-48">
+            <h1 className="text-7xl text-text-brand-primary text-center font-semibold">
+              Grow your users. <br />
+              <span className="text-text-brand-secondary">Smarter.</span>
+            </h1>
+            <p className="mt-6 mb-12 font-xl text-text-brand-tertiary text-center">
+              Powerful, self-serve product and growth analytics to help you
+              convert, engage, and retain more users. Trusted by over 4,000
+              startups.
+            </p>
+            <form action="" className="flex justify-center space-x-4">
+              <input type="text" />
+              <Button text="Get started" type="primary" redirectTo=""></Button>
+            </form>
+          </div>
+        </div>
+        <div className="col-start-4 col-span-6 -mt-24 p-8 bg-bg-primary rounded-xl border-2 border-border-secondary drop-shadow-xl">
+          <h5 className="text-lg text-text-primary font-semibold">
+            Users over time
+          </h5>
+          <div className="relative h-96">
+            <Image
+              alt="Graphic of users over time"
+              src={"/static/line-and-bar-chart.jpg"}
+              layout="fill"
+              objectFit="cover"
+            ></Image>
+          </div>
+
+          <div className="absolute -right-20 -bottom-9">
+            <Image
+              alt="Graphic of users over time"
+              src={"/static/activity-gauge.png"}
+              width={240}
+              height={240}
+            ></Image>
+          </div>
+        </div>
+      </header>
       <section>
         <CardSection
           badge="Integrations"
