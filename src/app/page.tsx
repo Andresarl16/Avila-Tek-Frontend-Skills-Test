@@ -29,19 +29,19 @@ export default function Home() {
       </section>
       <section className="grid grid-cols-12 mb-16 md:mb-20 lg:mb-24 ">
         <div className="grid col-start-2 col-span-10 grid-cols-12 bg-bg-brand-section rounded-t-2xl rounded-b-3xl lg:rounded-l-2xl lg:rounded-r-3xl">
-          <div className="flex flex-col justify-center col-span-12 lg:col-span-7 px-16">
-            <h3 className="text-4xl text-text-brand-primary font-semibold">
+          <div className="flex flex-col justify-center col-span-12 lg:col-span-7 mt-10 mb-12 lg:mt-0 lg:mb-0 px-6 lg:px-16">
+            <h3 className="text-3xl sm:text-4xl text-text-brand-primary font-semibold">
               Give us a Shot
             </h3>
-            <p className="mt-8 mb-12 text-xl text-text-brand-tertiary">
+            <p className="mt-4 lg:mt-8 mb-8 lg:mb-12 text-lg sm:text-xl text-text-brand-tertiary">
               Join over 4,000+ startups already growing with Untitled.
             </p>
-            <div className="flex space-x-3">
+            <div className="sm:flex space-x-0 space-y-3 sm:space-x-3 sm:space-y-0">
               <Button text="Learn More" type="secondary" redirectTo="" />
               <Button text="Get started" type="primary" redirectTo="" />
             </div>
           </div>
-          <div className="relative h-72 lg:h-100 col-span-12 lg:col-span-5 rounded-b-2xl lg:rounded-r-2xl">
+          <div className="relative h-72 sm:h-96 lg:h-100 col-span-12 lg:col-span-5 rounded-b-2xl lg:rounded-r-2xl">
             <Image
               alt="Give us a shoot image"
               src={"/static/give-us-a-shoot.jpg"}
