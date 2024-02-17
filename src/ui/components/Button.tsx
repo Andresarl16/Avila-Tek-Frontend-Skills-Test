@@ -39,7 +39,7 @@ export default function Button({ text, type, redirectTo, icon }: Button) {
 
   return (
     <button
-      className={`flex justify-center items-center px-4 py-2 rounded-lg font-semibold ${buttonStyles}`}
+      className={`flex justify-center items-center px-5 py-3 rounded-lg font-semibold ${buttonStyles}`}
     >
       {button.text}
       {button.icon ? (

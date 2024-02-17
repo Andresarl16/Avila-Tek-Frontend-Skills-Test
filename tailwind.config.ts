@@ -38,6 +38,9 @@ const config: Config = {
         "utility-brand-200": "#E9D7FE",
         "utility-brand-700": "#6941C6",
       },
+      height: {
+        100: "25rem",
+      },
     },
   },
   plugins: [],

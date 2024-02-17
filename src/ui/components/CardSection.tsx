@@ -14,7 +14,7 @@ export default function CardSection({
       <div className="grid col-span-12 justify-center items-center">
         <Badge text={badge} />
       </div>
-      <h3 className="grid col-span-12 mt-4 mb-4 lg:mb-5 text-3xl sm:text-4xl text-center font-semibold text-text-primary">
+      <h3 className="grid col-span-12 mt-4 mb-4 lg:mb-5 px-0 md:px-4 text-3xl sm:text-4xl text-center font-semibold text-text-primary">
         {title}
       </h3>
       <p className="grid md:col-start-3 lg:col-start-4 col-span-12 md:col-span-8 lg:col-span-6 mb-12 md:mb-14 lg:mb-16 text-lg sm:text-xl text-center text-text-tertiary">
