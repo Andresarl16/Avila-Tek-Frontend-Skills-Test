@@ -5,9 +5,12 @@ export interface Card {
   redirectTo: string;
 }
 
+export type IconSizes = "small" | "medium";
+
 export interface CardSection {
   badge: string;
   title: string;
   description: string;
   cards: Array<Card>;
+  iconSizes: IconSizes;
 }

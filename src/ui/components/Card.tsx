@@ -1,13 +1,24 @@
-import { Card } from "@/models/CardModel";
+import { Card, IconSizes } from "@/models/CardModel";
 import Button from "./Button";
 import RightArrowIcon from "../icons/RightArrowIcon";
 
-export default function Card({ card }: { card: Card }) {
+export default function Card({
+  card,
+  iconSize,
+}: {
+  card: Card;
+  iconSize: IconSizes;
+}) {
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className="w-fit p-1 border-2 rounded-lg border-border-secondary ">
+      <div
+        className={`flex justify-center items-center ${
+          iconSize === "medium"
+            ? "w-12 sm:w-14 h-12 sm:h-14"
+            : "w-10 sm:w-12 h-10 sm:h-12"
+        } p-1 border-2 rounded-lg border-border-secondary`}
+      >
         <card.svg className="w-10 sm:w-11 h-10 sm:h-11" />
-        {/* Widht a 40 en responsive */}
       </div>
       <h4 className="my-1.5 md:my-2 lg:my-2.5 text-lg sm:text-xl text-center font-semibold text-text-primary">
         {" "}

@@ -22,6 +22,7 @@ export default function Home() {
         available in our directory, your team’s favourite tools are just a click
         away."
           cards={integrationCards}
+          iconSizes="medium"
         />
       </section>
       <section>
@@ -30,6 +31,7 @@ export default function Home() {
           title="Cutting-edge features for advanced analytics"
           description="Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups."
           cards={featureCards}
+          iconSizes="small"
         />
       </section>
     </main>

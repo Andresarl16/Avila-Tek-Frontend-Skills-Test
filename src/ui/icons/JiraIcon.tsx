@@ -3,8 +3,6 @@ import React from "react";
 const JiraIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="50"
-    height="50"
     fill="none"
     viewBox="0 0 50 50"
     {...props}

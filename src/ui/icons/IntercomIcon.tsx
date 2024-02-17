@@ -3,10 +3,8 @@ import React from "react";
 const IntercomIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="56"
-    height="56"
     fill="none"
-    viewBox="0 0 56 56"
+    viewBox="3 3 50 50"
     {...props}
   >
     <circle cx="28" cy="28" r="24.5" fill="#3290E8" />

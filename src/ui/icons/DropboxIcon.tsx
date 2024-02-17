@@ -3,10 +3,8 @@ import React from "react";
 const DropboxIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="56"
-    height="57"
     fill="none"
-    viewBox="0 0 56 57"
+    viewBox="2 2 52 52"
     {...props}
   >
     <g filter="url(#a)">
