@@ -5,4 +5,5 @@ export interface Button {
   type: ButtonTypes;
   redirectTo: string;
   icon?: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
+  styles?: string;
 }

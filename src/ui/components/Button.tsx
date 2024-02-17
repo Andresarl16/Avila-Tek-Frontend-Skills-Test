@@ -1,11 +1,18 @@
 import { Button, ButtonTypes } from "@/models/ButtonModel";
 
-export default function Button({ text, type, redirectTo, icon }: Button) {
+export default function Button({
+  text,
+  type,
+  redirectTo,
+  icon,
+  styles,
+}: Button) {
   const button: Button = {
     text: text,
     type: type,
     redirectTo: redirectTo,
     icon: icon,
+    styles: styles,
   };
 
   function getButtonStyles(type: ButtonTypes) {
@@ -39,7 +46,7 @@ export default function Button({ text, type, redirectTo, icon }: Button) {
 
   return (
     <button
-      className={`flex justify-center items-center px-5 py-3 rounded-lg font-semibold ${buttonStyles}`}
+      className={`flex justify-center items-center px-5 py-3 rounded-lg font-semibold ${buttonStyles} ${styles}`}
     >
       {button.text}
       {button.icon ? (

@@ -37,8 +37,18 @@ export default function Home() {
               Join over 4,000+ startups already growing with Untitled.
             </p>
             <div className="sm:flex space-x-0 space-y-3 sm:space-x-3 sm:space-y-0">
-              <Button text="Learn More" type="secondary" redirectTo="" />
-              <Button text="Get started" type="primary" redirectTo="" />
+              <Button
+                text="Learn More"
+                type="secondary"
+                styles="w-full sm:w-auto"
+                redirectTo=""
+              />
+              <Button
+                text="Get started"
+                type="primary"
+                styles="w-full sm:w-auto"
+                redirectTo=""
+              />
             </div>
           </div>
           <div className="relative h-72 sm:h-96 lg:h-100 col-span-12 lg:col-span-5 rounded-b-2xl lg:rounded-r-2xl">
