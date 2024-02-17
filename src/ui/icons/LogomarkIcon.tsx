@@ -21,21 +21,21 @@ const LogomarkIcon = (props: React.SVGProps<SVGSVGElement>) => (
         />
         <path
           fill="#D0D5DD"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           d="M19 4.039c-7.71 0-13.961 6.25-13.961 13.961 0 7.71 6.25 13.961 13.961 13.961 7.71 0 13.961-6.25 13.961-13.961 0-7.71-6.25-13.961-13.961-13.961ZM4.961 18c0-7.753 6.286-14.039 14.039-14.039S33.039 10.247 33.039 18 26.753 32.039 19 32.039 4.961 25.753 4.961 18Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
         />
         <path
           fill="#D0D5DD"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           d="M19 14.078a3.922 3.922 0 1 0 0 7.845 3.922 3.922 0 0 0 0-7.845ZM15 18a4 4 0 1 1 8 0 4 4 0 0 1-8 0Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
         />
         <path
           fill="#D0D5DD"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           d="M19 15.32a2.68 2.68 0 1 0 0 5.36 2.68 2.68 0 0 0 0-5.36ZM16.243 18a2.757 2.757 0 1 1 5.514 0 2.757 2.757 0 0 1-5.514 0Z"
-          clip-rule="evenodd"
+          clipRule="evenodd"
         />
         <path fill="#D0D5DD" d="M18.961 2h.078v32h-.078V2Z" />
         <path fill="#D0D5DD" d="M35 17.96v.079H3v-.078h32Z" />
@@ -71,10 +71,10 @@ const LogomarkIcon = (props: React.SVGProps<SVGSVGElement>) => (
         height="38"
         x="0"
         y="0"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
         filterUnits="userSpaceOnUse"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           result="hardAlpha"
@@ -111,10 +111,10 @@ const LogomarkIcon = (props: React.SVGProps<SVGSVGElement>) => (
         height="22"
         x="8"
         y="8"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
         filterUnits="userSpaceOnUse"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           result="hardAlpha"
@@ -151,10 +151,10 @@ const LogomarkIcon = (props: React.SVGProps<SVGSVGElement>) => (
         height="26"
         x="-2"
         y="13"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
         filterUnits="userSpaceOnUse"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feGaussianBlur in="BackgroundImageFix" stdDeviation="2.5" />
         <feComposite
           in2="SourceAlpha"
@@ -175,8 +175,8 @@ const LogomarkIcon = (props: React.SVGProps<SVGSVGElement>) => (
         y2="34"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#fff" />
-        <stop offset="1" stop-color="#D0D5DD" />
+        <stop stopColor="#fff" />
+        <stop offset="1" stopColor="#D0D5DD" />
       </linearGradient>
       <linearGradient
         id="e"
@@ -186,8 +186,8 @@ const LogomarkIcon = (props: React.SVGProps<SVGSVGElement>) => (
         y2="10"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#53389E" />
-        <stop offset="1" stop-color="#6941C6" />
+        <stop stopColor="#53389E" />
+        <stop offset="1" stopColor="#6941C6" />
       </linearGradient>
       <clipPath id="b">
         <path

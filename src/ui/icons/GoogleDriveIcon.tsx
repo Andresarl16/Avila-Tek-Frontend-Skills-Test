@@ -6,6 +6,7 @@ const GoogleDriveIcon = (props: React.SVGProps<SVGSVGElement>) => (
     width={40}
     height={36}
     fill="none"
+    viewBox="0 0 40 36"
     {...props}
   >
     <path

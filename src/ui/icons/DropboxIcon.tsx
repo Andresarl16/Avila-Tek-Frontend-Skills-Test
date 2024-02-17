@@ -13,9 +13,9 @@ const DropboxIcon = (props: React.SVGProps<SVGSVGElement>) => (
       <circle cx="28" cy="28" r="24.5" fill="#0F287F" />
       <path
         fill="#DAF8FE"
-        fill-rule="evenodd"
+        fillRule="evenodd"
         d="m19.25 14-8.75 5.25 8.75 5.25-8.75 5.25L19.25 35 28 29.75 36.75 35l8.75-5.25-8.75-5.25 8.75-5.25L36.75 14 28 19.25 19.25 14ZM28 19.25l8.75 5.25L28 29.75l-8.75-5.25L28 19.25Z"
-        clip-rule="evenodd"
+        clipRule="evenodd"
       />
       <path
         fill="#DAF8FE"
@@ -29,10 +29,10 @@ const DropboxIcon = (props: React.SVGProps<SVGSVGElement>) => (
         height="62"
         x="-3"
         y="-2"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
         filterUnits="userSpaceOnUse"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           result="hardAlpha"

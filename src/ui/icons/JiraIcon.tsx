@@ -15,15 +15,15 @@ const JiraIcon = (props: React.SVGProps<SVGSVGElement>) => (
     />
     <path
       fill="url(#a)"
-      fill-rule="evenodd"
+      fillRule="evenodd"
       d="M25 17.756C20.096 13.013 20.073 5.33 24.947.558L8.557 16.404l8.92 8.628L25 17.756Z"
-      clip-rule="evenodd"
+      clipRule="evenodd"
     />
     <path
       fill="url(#b)"
-      fill-rule="evenodd"
+      fillRule="evenodd"
       d="M32.51 24.98 25 32.245c2.367 2.288 3.697 5.392 3.697 8.628 0 3.236-1.33 6.34-3.697 8.628L41.43 33.61l-8.92-8.628Z"
-      clip-rule="evenodd"
+      clipRule="evenodd"
     />
     <defs>
       <linearGradient
@@ -34,8 +34,8 @@ const JiraIcon = (props: React.SVGProps<SVGSVGElement>) => (
         y2="15.883"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".18" stop-color="#0052CC" />
-        <stop offset="1" stop-color="#2684FF" />
+        <stop offset=".18" stopColor="#0052CC" />
+        <stop offset="1" stopColor="#2684FF" />
       </linearGradient>
       <linearGradient
         id="b"
@@ -45,8 +45,8 @@ const JiraIcon = (props: React.SVGProps<SVGSVGElement>) => (
         y2="34.072"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".18" stop-color="#0052CC" />
-        <stop offset="1" stop-color="#2684FF" />
+        <stop offset=".18" stopColor="#0052CC" />
+        <stop offset="1" stopColor="#2684FF" />
       </linearGradient>
     </defs>
   </svg>

@@ -6,6 +6,7 @@ const NotionIcon = (props: React.SVGProps<SVGSVGElement>) => (
     width={56}
     height={56}
     fill="none"
+    viewBox="0 0 56 56"
     {...props}
   >
     <path
