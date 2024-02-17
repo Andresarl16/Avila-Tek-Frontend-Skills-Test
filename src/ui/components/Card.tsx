@@ -8,11 +8,11 @@ export default function Card({ card }: { card: Card }) {
       <div className="w-fit p-1 border-2 rounded-lg border-border-secondary ">
         <card.svg width={50} height={50} />
       </div>
-      <h4 className="py-3 text-xl font-semibold text-text-primary">
+      <h4 className="my-2.5 text-xl font-semibold text-text-primary">
         {" "}
         {card.title}{" "}
       </h4>
-      <p className="mb-2 text-base text-center text-text-tertiary">
+      <p className="mb-4 text-base text-center text-text-tertiary">
         {" "}
         {card.description}{" "}
       </p>

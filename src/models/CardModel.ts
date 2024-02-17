@@ -4,3 +4,10 @@ export interface Card {
   description: string;
   redirectTo: string;
 }
+
+export interface CardSection {
+  badge: string;
+  title: string;
+  description: string;
+  cards: Array<Card>;
+}
