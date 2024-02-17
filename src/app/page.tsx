@@ -1,10 +1,7 @@
-import { priceCards } from "@/constants/PriceCards";
-import Badge from "@/ui/components/Badge";
-import Card from "@/ui/components/Card";
+import { featureCards } from "@/constants/FeatureCards";
+import { integrationCards } from "@/constants/IntegrationCards";
 import CardSection from "@/ui/components/CardSection";
-import GoogleDriveIcon from "@/ui/icons/GoogleDriveIcon";
 import NotionIcon from "@/ui/icons/NotionIcon";
-import Image from "next/image";
 
 export default function Home() {
   const card = {
@@ -24,7 +21,15 @@ export default function Home() {
           description="Connect your tools, connect your teams. With over 100 apps already
         available in our directory, your team’s favourite tools are just a click
         away."
-          cards={priceCards}
+          cards={integrationCards}
+        />
+      </section>
+      <section>
+        <CardSection
+          badge="Features"
+          title="Cutting-edge features for advanced analytics"
+          description="Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups."
+          cards={featureCards}
         />
       </section>
     </main>

@@ -9,17 +9,17 @@ export default function CardSection({
   cards,
 }: CardSection) {
   return (
-    <section className="grid grid-cols-12 mb-24">
+    <section className="grid grid-cols-12 mb-16 md:mb-20 lg:mb-24 px-4 md:px-0">
       <div className="grid col-span-12 justify-center items-center">
         <Badge text={badge} />
       </div>
-      <h3 className="grid col-start-3 col-span-8 mt-4 text-4xl text-center font-semibold text-text-primary">
+      <h3 className="grid col-span-12 mt-4 mb-4 lg:mb-5 text-3xl sm:text-4xl text-center font-semibold text-text-primary">
         {title}
       </h3>
-      <p className="grid col-start-3 col-span-8 mt-5 mb-16 text-xl text-center text-text-tertiary">
+      <p className="grid md:col-start-3 lg:col-start-4 col-span-12 md:col-span-8 lg:col-span-6 mb-12 md:mb-14 lg:mb-16 text-lg sm:text-xl text-center text-text-tertiary">
         {description}
       </p>
-      <div className="grid col-start-2 col-span-10 grid-cols-3 gap-x-10 gap-y-16">
+      <div className="grid col-start-2 col-span-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-10 sm:gap-y-12 lg:gap-y-16">
         {cards.map((card) => (
           <Card key={card.title} card={card}></Card>
         ))}

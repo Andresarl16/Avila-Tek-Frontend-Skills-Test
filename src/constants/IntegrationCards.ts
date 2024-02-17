@@ -6,7 +6,7 @@ import JiraIcon from "@/ui/icons/JiraIcon";
 import NotionIcon from "@/ui/icons/NotionIcon";
 import SlackIcon from "@/ui/icons/SlackIcon";
 
-export const priceCards: Array<Card> = [
+export const integrationCards: Array<Card> = [
   {
     svg: NotionIcon,
     title: "Notion Integration",
