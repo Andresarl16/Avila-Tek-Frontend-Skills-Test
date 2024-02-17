@@ -1,3 +1,8 @@
 {
-  "conventionalCommits.scopes": ["General", "Configuration", "Styles"]
+  "conventionalCommits.scopes": [
+    "General",
+    "Configuration",
+    "Styles",
+    "Sections"
+  ]
 }
