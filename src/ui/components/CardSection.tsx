@@ -10,7 +10,7 @@ export default function CardSection({
   iconSizes,
 }: CardSection) {
   return (
-    <section className="grid grid-cols-12 mb-16 md:mb-20 lg:mb-24 px-4 md:px-0">
+    <section className="grid col-span-12 grid-cols-12 mb-16 md:mb-20 lg:mb-24 px-4 md:px-0">
       <div className="grid col-span-12 justify-center items-center">
         <Badge text={badge} />
       </div>
