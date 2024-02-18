@@ -40,6 +40,7 @@ const config: Config = {
       },
       height: {
         100: "25rem",
+        112: "28rem",
       },
     },
   },

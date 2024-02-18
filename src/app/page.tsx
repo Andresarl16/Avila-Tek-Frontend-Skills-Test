@@ -5,6 +5,7 @@ import FAQ from "@/ui/components/sections/FAQ";
 import FreeTrial from "@/ui/components/sections/FreeTrial";
 import GiveUsAShoot from "@/ui/components/sections/GiveUsAShoot";
 import Header from "@/ui/components/sections/Header";
+import Reviews from "@/ui/components/sections/Reviews";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
       />
       <FreeTrial></FreeTrial>
       <FAQ></FAQ>
+      <Reviews></Reviews>
     </main>
   );
 }
