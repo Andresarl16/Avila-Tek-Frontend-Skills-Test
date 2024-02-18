@@ -45,7 +45,7 @@ export default function Home() {
             </form>
           </div>
         </div>
-        <div className="col-start-2 sm:col-start-4 col-span-10 sm:col-span-6 -mt-8 sm:-mt-24 p-8 bg-bg-primary rounded-xl border-2 border-border-secondary drop-shadow-xl">
+        <div className="relative col-start-2 sm:col-start-4 col-span-10 sm:col-span-6 -mt-8 sm:-mt-24 p-8 bg-bg-primary rounded-xl border-2 border-border-secondary drop-shadow-xl">
           <h5 className="text-lg text-text-primary font-semibold">
             Users over time
           </h5>
