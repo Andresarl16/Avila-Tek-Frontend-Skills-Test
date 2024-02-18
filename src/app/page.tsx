@@ -1,6 +1,7 @@
 import { featureCards } from "@/constants/FeatureCards";
 import { integrationCards } from "@/constants/IntegrationCards";
 import CardSection from "@/ui/components/sections/CardSection";
+import FAQ from "@/ui/components/sections/FAQ";
 import FreeTrial from "@/ui/components/sections/FreeTrial";
 import GiveUsAShoot from "@/ui/components/sections/GiveUsAShoot";
 import Header from "@/ui/components/sections/Header";
@@ -27,6 +28,7 @@ export default function Home() {
         iconSizes="small"
       />
       <FreeTrial></FreeTrial>
+      <FAQ></FAQ>
     </main>
   );
 }
