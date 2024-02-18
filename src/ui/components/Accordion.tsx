@@ -10,7 +10,7 @@ export default function Accordion({
     <ul>
       {items.map((item, index) => (
         <li key={item.title}>
-          {index == 0 ? <></> : <hr className="my-8 border-border-secondary" />}
+          {index == 0 ? <></> : <hr className="my-7 border-border-secondary" />}
           <AccordionItem title={item.title} description={item.description} />
         </li>
       ))}{" "}
