@@ -22,7 +22,7 @@ export default function AccordionItem({
           {" "}
           {title}{" "}
         </h6>
-        <div className="relative w-fit">
+        <div className="relative w-5">
           <MinusIcon
             className={`absolute transition-all duration-300 ease-in-out ${
               accordionOpen ? "rotate-0" : "-rotate-180"
