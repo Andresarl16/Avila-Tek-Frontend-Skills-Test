@@ -1,6 +1,6 @@
 import { CardSection } from "@/models/CardModel";
-import Badge from "./Badge";
-import Card from "./Card";
+import Badge from "../Badge";
+import Card from "../Card";
 
 export default function CardSection({
   badge,
