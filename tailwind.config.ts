@@ -19,6 +19,7 @@ const config: Config = {
         // Text Colors //
         "text-primary": "#101828",
         "text-tertiary": "#475467",
+        "text-quaternary": "#667085",
         "text-brand-primary": "#FFFFFF",
         "text-brand-secondary": "#E9D7FE",
         "text-brand-tertiary": "#E9D7FE",
@@ -36,6 +37,7 @@ const config: Config = {
         // Utility //
         "utility-brand-50": "#F9F5FF",
         "utility-brand-200": "#E9D7FE",
+        "utility-brand-600": "#7F56D9",
         "utility-brand-700": "#6941C6",
       },
       height: {

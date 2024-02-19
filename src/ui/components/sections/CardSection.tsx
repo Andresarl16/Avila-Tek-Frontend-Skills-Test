@@ -1,6 +1,6 @@
 import { CardSection } from "@/models/CardModel";
-import Badge from "../Badge";
 import Card from "../Card";
+import SectionBadge from "../badges/SectionBadge";
 
 export default function CardSection({
   badge,
@@ -12,7 +12,7 @@ export default function CardSection({
   return (
     <section className="grid col-span-12 grid-cols-12 mb-16 md:mb-20 lg:mb-24 px-4 md:px-0">
       <div className="grid col-span-12 justify-center items-center">
-        <Badge text={badge} />
+        <SectionBadge text={badge} />
       </div>
       <h3 className="grid col-span-12 mt-4 mb-4 lg:mb-5 px-0 md:px-4 text-3xl sm:text-4xl text-center font-semibold text-text-primary">
         {title}
