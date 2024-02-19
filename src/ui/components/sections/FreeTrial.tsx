@@ -1,9 +1,12 @@
 import Button from "../Button";
 import Image from "next/image";
 
-export default function FreeTrial() {
+export default function FreeTrial({ id }: { id: string }) {
   return (
-    <section className="grid col-span-12 grid-cols-12 bg-bg-secondary py-24">
+    <section
+      id={id}
+      className="grid col-span-12 grid-cols-12 bg-bg-secondary py-24"
+    >
       <div className="grid col-start-2 col-span-10 grid-cols-12">
         <div className="flex flex-col col-span-7 justify-center">
           <h2 className="text-5xl text-text-primary font-semibold">

@@ -9,3 +9,7 @@ h4,
 p {
   text-wrap: pretty;
 }
+
+.overflow-hidden-children * {
+  overflow: hidden;
+}

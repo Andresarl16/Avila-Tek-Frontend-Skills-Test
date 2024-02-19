@@ -20,7 +20,7 @@ export interface FooterBadges {
   badges: Array<FooterBadge>;
 }
 
-export interface Footer {
+export interface FooterModel {
   linkColumns: Array<FooterLinks>;
   downloadBadges: FooterBadges;
 }

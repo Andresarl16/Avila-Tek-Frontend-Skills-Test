@@ -1,8 +1,8 @@
-import { Footer } from "@/models/FooterModel";
+import { FooterModel } from "@/models/FooterModel";
 import AppStoreIcon from "@/ui/icons/AppStoreIcon";
 import GooglePlayIcon from "@/ui/icons/GooglePlayIcon";
 
-export const footer: Footer = {
+export const footer: FooterModel = {
   linkColumns: [
     {
       name: "Product",

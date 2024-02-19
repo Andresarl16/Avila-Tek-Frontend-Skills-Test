@@ -6,11 +6,15 @@ import Footer from "@/ui/components/sections/Footer";
 import FreeTrial from "@/ui/components/sections/FreeTrial";
 import GiveUsAShoot from "@/ui/components/sections/GiveUsAShoot";
 import Header from "@/ui/components/sections/Header";
+import Navbar from "@/ui/components/sections/Navbar";
 import Reviews from "@/ui/components/sections/Reviews";
 
 export default function Home() {
   return (
     <main className="max-w-full grid grid-cols-12">
+      <div className="fixed top-0 z-10 w-full grid grid-cols-12">
+        <Navbar></Navbar>
+      </div>
       <Header></Header>
       <CardSection
         badge="Integrations"
@@ -29,7 +33,7 @@ export default function Home() {
         cards={featureCards}
         iconSizes="small"
       />
-      <FreeTrial></FreeTrial>
+      <FreeTrial id="pricing"></FreeTrial>
       <FAQ></FAQ>
       <Reviews></Reviews>
       <Footer></Footer>

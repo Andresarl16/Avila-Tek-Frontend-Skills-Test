@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="grid col-span-12 grid-cols-12 mt-0 sm:mt-8 mb-24 sm:mb-28 lg:mb-32">
+    <header className="grid col-span-12 grid-cols-12 mt-0 sm:mt-24 mb-24 sm:mb-28 lg:mb-32">
       <div className="grid sm:col-start-2 col-span-12 sm:col-span-10 grid-cols-12 px-4 md:px-0 bg-bg-brand-section sm:rounded-2xl">
         <div className="sm:col-start-3 col-span-12 sm:col-span-8 pt-16 sm:pt-24 pb-24 sm:pb-48">
           <h1 className="text-4xl md:text-5xl lg:text-7xl text-text-brand-primary text-center font-semibold">
