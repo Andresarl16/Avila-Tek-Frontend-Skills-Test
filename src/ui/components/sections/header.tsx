@@ -2,7 +2,7 @@ import Button from "../Button";
 import Image from "next/image";
 import Input from "@/ui/components/Input";
 
-export default function Header({ id }: { id: string }) {
+export default function HeaderSection({ id }: { id: string }) {
   return (
     <header
       id={id}
