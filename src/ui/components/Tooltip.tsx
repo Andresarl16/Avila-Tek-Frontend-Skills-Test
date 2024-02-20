@@ -34,7 +34,7 @@ export default function Tooltip({ text, position, children }: Tooltip) {
 
   return (
     <div id="tooltip" className="relative cursor-pointer group">
-      <div className="mx-2 my-1"> {children} </div>
+      <div> {children} </div>
       <span
         className={`absolute hidden group-hover:inline-block text-text-tertiary text-xs p-2 rounded-lg whitespace-nowrap ${getTooltipStyles(
           position

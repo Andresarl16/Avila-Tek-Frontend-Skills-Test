@@ -5,24 +5,24 @@ export default function Button({
   type,
   redirectTo,
   icon,
-  styles,
+  className,
 }: Button) {
   const button: Button = {
     text: text,
     type: type,
     redirectTo: redirectTo,
     icon: icon,
-    styles: styles,
+    className: className,
   };
 
   function getButtonStyles(type: ButtonTypes) {
     switch (type) {
       case "primary":
-        return "bg-bg-button-primary text-text-button-primary";
+        return "bg-bg-button-primary text-text-button-primary hover:bg-utility-brand-700";
       case "secondary":
-        return "bg-bg-button-secondary text-text-button-secondary";
+        return "bg-bg-button-secondary text-text-button-secondary hover:bg-bg-button-secondary-hover";
       case "tertiary":
-        return "bg-bg-button-tertiary text-text-button-tertiary";
+        return "bg-bg-button-tertiary text-text-button-tertiary hover:text-utility-brand-800";
       default:
         return "";
     }
@@ -41,16 +41,19 @@ export default function Button({
     }
   }
 
-  const buttonStyles = getButtonStyles(button.type);
-  const iconStyles = getIconStyles(button.type);
-
   return (
     <button
-      className={`flex justify-center items-center px-5 py-3 rounded-lg font-semibold ${buttonStyles} ${styles}`}
+      className={`flex justify-center items-center px-5 py-3 rounded-lg font-semibold ${getButtonStyles(
+        button.type
+      )} ${className} transition-all duration-300 ease-in-out`}
     >
       {button.text}
       {button.icon ? (
-        <button.icon className={`pl-2 ${iconStyles}`} width={20} height={20} />
+        <button.icon
+          className={`pl-2 ${getIconStyles(button.type)}`}
+          width={20}
+          height={20}
+        />
       ) : (
         <></>
       )}

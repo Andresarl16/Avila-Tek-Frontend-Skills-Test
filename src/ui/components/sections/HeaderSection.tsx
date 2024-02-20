@@ -38,7 +38,7 @@ export default function HeaderSection({ id }: { id: string }) {
               text="Get started"
               type="primary"
               redirectTo=""
-              styles="h-fit w-full lg:w-auto"
+              className="h-fit w-full lg:w-auto"
             ></Button>
           </form>
         </div>

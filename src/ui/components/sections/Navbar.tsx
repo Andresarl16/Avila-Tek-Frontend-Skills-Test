@@ -72,7 +72,7 @@ export default function Navbar() {
                   text={button.text}
                   type={button.type}
                   redirectTo={button.redirectTo}
-                  styles="pt-3 pr-4 pb-3 pl-4"
+                  className="pt-3 pr-4 pb-3 pl-4"
                 ></Button>
               </li>
             ))}

@@ -16,6 +16,7 @@ const config: Config = {
         "bg-brand-section": "#53389E",
         "bg-button-primary": "#7F56D9",
         "bg-button-secondary": "#FFFFFF",
+        "bg-button-secondary-hover": "#EDEDED",
 
         // Text Colors //
         "text-primary": "#101828",
@@ -40,6 +41,7 @@ const config: Config = {
         "utility-brand-200": "#E9D7FE",
         "utility-brand-600": "#7F56D9",
         "utility-brand-700": "#6941C6",
+        "utility-brand-800": "#3F248D",
       },
       height: {
         100: "25rem",

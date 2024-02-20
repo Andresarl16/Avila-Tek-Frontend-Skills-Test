@@ -23,7 +23,7 @@ export default function Footer() {
                       text={links.text}
                       type={links.type}
                       redirectTo={links.redirectTo}
-                      styles="pt-0 pr-0 pb-0 pl-0"
+                      className="pt-0 pr-0 pb-0 pl-0"
                     />
                     {links.new ? <NewBadge></NewBadge> : <></>}
                   </li>
