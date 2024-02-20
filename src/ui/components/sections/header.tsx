@@ -2,10 +2,13 @@ import Button from "../Button";
 import Image from "next/image";
 import Input from "@/ui/components/Input";
 
-export default function Header() {
+export default function Header({ id }: { id: string }) {
   return (
-    <header className="grid col-span-12 grid-cols-12 mt-16 sm:mt-24 mb-24 sm:mb-28 lg:mb-32">
-      <div className="grid sm:col-start-2 col-span-12 sm:col-span-10 grid-cols-12 px-4 md:px-0 bg-bg-brand-section sm:rounded-2xl">
+    <header
+      id={id}
+      className="grid col-span-12 grid-cols-12 mt-0 sm:mt-24 mb-24 sm:mb-28 lg:mb-32"
+    >
+      <div className="grid sm:col-start-2 col-span-12 sm:col-span-10 grid-cols-12 px-4 md:px-0 pt-16 sm:pt-0 bg-bg-brand-section sm:rounded-2xl">
         <div className="flex flex-col items-center sm:col-start-3 col-span-12 sm:col-span-8 pt-16 sm:pt-24 pb-24 sm:pb-48">
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-text-brand-primary text-center font-semibold">
             Grow your users. <br />

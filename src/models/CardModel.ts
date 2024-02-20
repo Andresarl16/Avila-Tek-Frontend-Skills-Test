@@ -8,6 +8,7 @@ export interface Card {
 export type IconSizes = "small" | "medium";
 
 export interface CardSection {
+  id: string;
   badge: string;
   title: string;
   description: string;

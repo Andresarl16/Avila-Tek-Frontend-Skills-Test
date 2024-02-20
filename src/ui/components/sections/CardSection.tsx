@@ -3,6 +3,7 @@ import Card from "../Card";
 import SectionBadge from "../badges/SectionBadge";
 
 export default function CardSection({
+  id,
   badge,
   title,
   description,
@@ -10,7 +11,10 @@ export default function CardSection({
   iconSizes,
 }: CardSection) {
   return (
-    <section className="grid col-span-12 grid-cols-12 mb-16 md:mb-20 lg:mb-24 px-4 md:px-0">
+    <section
+      id={id}
+      className="grid col-span-12 grid-cols-12 mb-16 md:mb-20 lg:mb-24 px-4 md:px-0"
+    >
       <div className="grid col-span-12 justify-center items-center">
         <SectionBadge text={badge} />
       </div>

@@ -2,9 +2,9 @@ import { NavbarModel } from "@/models/NavbarModel";
 
 export const navbar: NavbarModel = {
   start: [
-    { text: "Home", section: "" },
-    { text: "Products", section: "" },
-    { text: "Resources", section: "" },
+    { text: "Home", section: "#home" },
+    { text: "Products", section: "#products" },
+    { text: "Resources", section: "#resources" },
     { text: "Pricing", section: "#pricing" },
   ],
   end: [

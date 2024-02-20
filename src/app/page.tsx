@@ -15,8 +15,9 @@ export default function Home() {
       <div className="fixed top-0 z-10 w-full grid grid-cols-12">
         <Navbar></Navbar>
       </div>
-      <Header></Header>
+      <Header id="home"></Header>
       <CardSection
+        id="products"
         badge="Integrations"
         title="Get more value from your tools"
         description="Connect your tools, connect your teams. With over 100 apps already
@@ -27,6 +28,7 @@ export default function Home() {
       />
       <GiveUsAShoot></GiveUsAShoot>
       <CardSection
+        id="resources"
         badge="Features"
         title="Cutting-edge features for advanced analytics"
         description="Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups."
