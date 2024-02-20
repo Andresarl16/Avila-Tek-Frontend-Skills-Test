@@ -41,7 +41,7 @@ export default function LogIn() {
           ></Button>
         </form>
         <p className="text-text-brand-primary mt-6">
-          Don't have an account?{" "}
+          {"Don't have an account?"}
           <Link href={"/login"}>
             {" "}
             <u>Sing up</u>
