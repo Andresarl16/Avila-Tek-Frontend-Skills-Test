@@ -4,10 +4,10 @@ import Input from "@/ui/components/Input";
 
 export default function Header() {
   return (
-    <header className="grid col-span-12 grid-cols-12 mt-0 sm:mt-24 mb-24 sm:mb-28 lg:mb-32">
+    <header className="grid col-span-12 grid-cols-12 mt-16 sm:mt-24 mb-24 sm:mb-28 lg:mb-32">
       <div className="grid sm:col-start-2 col-span-12 sm:col-span-10 grid-cols-12 px-4 md:px-0 bg-bg-brand-section sm:rounded-2xl">
-        <div className="sm:col-start-3 col-span-12 sm:col-span-8 pt-16 sm:pt-24 pb-24 sm:pb-48">
-          <h1 className="text-4xl md:text-5xl lg:text-7xl text-text-brand-primary text-center font-semibold">
+        <div className="flex flex-col items-center sm:col-start-3 col-span-12 sm:col-span-8 pt-16 sm:pt-24 pb-24 sm:pb-48">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-text-brand-primary text-center font-semibold">
             Grow your users. <br />
             <span className="text-text-brand-secondary">Smarter.</span>
           </h1>
@@ -16,13 +16,17 @@ export default function Header() {
             convert, engage, and retain more users. Trusted by over 4,000
             startups.
           </p>
-          <form action="" className="sm:flex justify-center sm:space-x-4">
-            <div>
+          <form
+            action=""
+            className="w-full md:w-3/4 lg:w-full lg:flex justify-center lg:space-x-4"
+          >
+            <div className="w-auto">
               <Input
                 placeholder="Enter your email"
                 tooltip="Enter your email"
+                className="w-full lg:max-w-96"
               ></Input>
-              <p className="mb-4 sm:mb-0 text-sm text-text-brand-tertiary">
+              <p className="mb-4 lg:mb-0 text-sm text-text-brand-tertiary">
                 We care about your data in our{" "}
                 <u className="cursor-pointer">privacy policy</u>.
               </p>
@@ -31,7 +35,7 @@ export default function Header() {
               text="Get started"
               type="primary"
               redirectTo=""
-              styles="h-fit w-full sm:w-auto"
+              styles="h-fit w-full lg:w-auto"
             ></Button>
           </form>
         </div>
