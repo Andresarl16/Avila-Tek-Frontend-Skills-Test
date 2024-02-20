@@ -30,7 +30,7 @@ export default function Navbar() {
             width={20}
             height={2}
             className={`absolute top-[5px] transition-all duration-500 ease-in-out ${
-              navbarOpen ? "opacity-100" : "opacity-100"
+              navbarOpen ? "opacity-0" : "opacity-100"
             }`}
           ></LineIcon>
           <LineIcon
@@ -46,7 +46,7 @@ export default function Navbar() {
         className={`overflow-hidden-children w-full grid overflow-hidden lg:flex justify-center lg:justify-between items-center transition-all duration-500 ease-in-out ${
           navbarOpen
             ? "grid-rows-[1fr] opacity-100"
-            : "grid-rows-[0fr] opacity-0"
+            : "grid-rows-[0fr] opacity-0 lg:opacity-100"
         }`}
       >
         <div className="w-full flex flex-col lg:flex-row items-center justify-between">
