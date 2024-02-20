@@ -53,6 +53,7 @@ export default function FreeTrial({ id }: { id: string }) {
                 fill={true}
               />{" "}
             </div>
+            <picture></picture>
             <div className="relative w-40 h-60">
               {" "}
               <Image
