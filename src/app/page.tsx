@@ -5,6 +5,7 @@ import FAQ from "@/ui/components/sections/FAQ";
 import Footer from "@/ui/components/sections/Footer";
 import FreeTrial from "@/ui/components/sections/FreeTrial";
 import GiveUsAShoot from "@/ui/components/sections/GiveUsAShoot";
+import HeaderSection from "@/ui/components/sections/HeaderSection";
 import Navbar from "@/ui/components/sections/Navbar";
 import Reviews from "@/ui/components/sections/Reviews";
 
@@ -14,6 +15,7 @@ export default function Home() {
       <div className="fixed top-0 z-10 w-full grid grid-cols-12">
         <Navbar></Navbar>
       </div>
+      <HeaderSection id="home"></HeaderSection>
       <CardSection
         id="products"
         badge="Integrations"
