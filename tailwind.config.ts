@@ -12,6 +12,7 @@ const config: Config = {
         // Background Colors //
         "bg-primary": "#FFFFFF",
         "bg-secondary": "#F9FAFB",
+        "bg-tertiary": "#F1F1F1",
         "bg-brand-section": "#53389E",
         "bg-button-primary": "#7F56D9",
         "bg-button-secondary": "#FFFFFF",

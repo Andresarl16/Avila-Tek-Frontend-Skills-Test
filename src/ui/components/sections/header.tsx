@@ -1,5 +1,6 @@
 import Button from "../Button";
 import Image from "next/image";
+import Input from "@/ui/components/Input";
 
 export default function Header() {
   return (
@@ -17,7 +18,10 @@ export default function Header() {
           </p>
           <form action="" className="sm:flex justify-center sm:space-x-4">
             <div>
-              <input type="text" className="h-12" />
+              <Input
+                placeholder="Enter your email"
+                tooltip="Enter your email"
+              ></Input>
               <p className="mb-4 sm:mb-0 text-sm text-text-brand-tertiary">
                 We care about your data in our{" "}
                 <u className="cursor-pointer">privacy policy</u>.
