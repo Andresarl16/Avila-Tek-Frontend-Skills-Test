@@ -1,4 +1,5 @@
 import { Button, ButtonTypes } from "@/models/ButtonModel";
+import Link from "next/link";
 
 export default function Button({
   text,
@@ -42,21 +43,23 @@ export default function Button({
   }
 
   return (
-    <button
-      className={`flex justify-center items-center px-5 py-3 rounded-lg font-semibold ${getButtonStyles(
-        button.type
-      )} ${className} transition-all duration-300 ease-in-out`}
-    >
-      {button.text}
-      {button.icon ? (
-        <button.icon
-          className={`pl-2 ${getIconStyles(button.type)}`}
-          width={20}
-          height={20}
-        />
-      ) : (
-        <></>
-      )}
-    </button>
+    <Link href={button.redirectTo}>
+      <button
+        className={`flex justify-center items-center px-5 py-3 rounded-lg font-semibold ${getButtonStyles(
+          button.type
+        )} ${className} transition-all duration-300 ease-in-out`}
+      >
+        {button.text}
+        {button.icon ? (
+          <button.icon
+            className={`pl-2 ${getIconStyles(button.type)}`}
+            width={20}
+            height={20}
+          />
+        ) : (
+          <></>
+        )}
+      </button>
+    </Link>
   );
 }

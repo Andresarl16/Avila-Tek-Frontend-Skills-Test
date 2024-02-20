@@ -6,7 +6,7 @@ export default function HeaderSection({ id }: { id: string }) {
   return (
     <header
       id={id}
-      className="grid col-span-12 grid-cols-12 mt-0 sm:mt-24 mb-24 sm:mb-28 lg:mb-32"
+      className="grid col-span-12 grid-cols-12 pt-0 sm:pt-24 mb-24 sm:mb-28 lg:mb-32"
     >
       <div className="grid sm:col-start-2 col-span-12 sm:col-span-10 grid-cols-12 px-4 md:px-0 pt-16 sm:pt-0 bg-bg-brand-section sm:rounded-2xl">
         <div className="flex flex-col items-center sm:col-start-3 col-span-12 sm:col-span-8 pt-16 sm:pt-24 pb-24 sm:pb-48">
