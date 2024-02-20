@@ -16,13 +16,13 @@ export default function GiveUsAShoot() {
             <Button
               text="Learn More"
               type="secondary"
-              styles="w-full sm:w-auto"
+              className="w-full sm:w-auto"
               redirectTo=""
             />
             <Button
               text="Get started"
               type="primary"
-              styles="w-full sm:w-auto"
+              className="w-full sm:w-auto"
               redirectTo=""
             />
           </div>

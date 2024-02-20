@@ -20,7 +20,7 @@ export default function FreeTrial({ id }: { id: string }) {
               text="Learn more"
               type="secondary"
               redirectTo=""
-              styles="border-2 border-border-button-secondary"
+              className="border-2 border-border-button-secondary"
             />
             <Button text="Get started" type="primary" redirectTo="" />
           </div>

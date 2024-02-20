@@ -1,5 +1,4 @@
 import StarIcon from "@/ui/icons/StarIcon";
-import Button from "../Button";
 import Image from "next/image";
 
 export default function Reviews() {
