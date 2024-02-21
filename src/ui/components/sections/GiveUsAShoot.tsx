@@ -12,7 +12,7 @@ export default function GiveUsAShoot() {
           <p className="mt-4 lg:mt-8 mb-8 lg:mb-12 text-lg sm:text-xl text-text-brand-tertiary">
             Join over 4,000+ startups already growing with Untitled.
           </p>
-          <div className="sm:flex space-x-0 space-y-3 sm:space-x-3 sm:space-y-0">
+          <div className="flex flex-col sm:flex-row space-x-0 space-y-3 sm:space-x-3 sm:space-y-0">
             <Button
               text="Learn More"
               type="secondary"
