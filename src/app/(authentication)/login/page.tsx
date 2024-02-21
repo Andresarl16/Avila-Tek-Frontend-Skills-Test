@@ -1,3 +1,5 @@
+"use client";
+
 import Button from "@/ui/components/Button";
 import Input from "@/ui/components/Input";
 import RightArrowIcon from "@/ui/icons/RightArrowIcon";
@@ -36,7 +38,8 @@ export default function LogIn() {
           <Button
             text="Log in"
             type="primary"
-            redirectTo=""
+            actionType="function"
+            onClick={() => {}}
             className="h-fit w-full"
           ></Button>
         </form>

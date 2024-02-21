@@ -8,7 +8,17 @@ export const navbar: NavbarModel = {
     { text: "Pricing", section: "#pricing" },
   ],
   end: [
-    { text: "Log in", type: "secondary", redirectTo: "/login" },
-    { text: "Sign up", type: "primary", redirectTo: "/sing-up" },
+    {
+      text: "Log in",
+      type: "secondary",
+      actionType: "internal-redirect",
+      redirectTo: "/login",
+    },
+    {
+      text: "Sign up",
+      type: "primary",
+      actionType: "internal-redirect",
+      redirectTo: "/sing-up",
+    },
   ],
 };

@@ -20,13 +20,15 @@ export default function FreeTrial({ id }: { id: string }) {
             <Button
               text="Learn more"
               type="secondary"
-              redirectTo=""
+              actionType="internal-redirect"
+              redirectTo="#faq"
               className="w-full sm:w-auto border-2 border-border-button-secondary"
             />
             <Button
               text="Get started"
               type="primary"
-              redirectTo=""
+              actionType="internal-redirect"
+              redirectTo="/login"
               className="w-full sm:w-auto"
             />
           </div>

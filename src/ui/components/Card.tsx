@@ -5,9 +5,11 @@ import RightArrowIcon from "../icons/RightArrowIcon";
 export default function Card({
   card,
   iconSize,
+  onClick,
 }: {
   card: Card;
   iconSize: IconSizes;
+  onClick: () => void;
 }) {
   return (
     <div className="flex flex-col justify-center items-center">
@@ -31,7 +33,8 @@ export default function Card({
       <Button
         text="View integration"
         type="tertiary"
-        redirectTo=""
+        actionType="function"
+        onClick={onClick}
         icon={RightArrowIcon}
       ></Button>
     </div>

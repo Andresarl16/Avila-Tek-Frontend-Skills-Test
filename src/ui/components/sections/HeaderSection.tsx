@@ -2,7 +2,13 @@ import Button from "../Button";
 import Image from "next/image";
 import Input from "@/ui/components/Input";
 
-export default function HeaderSection({ id }: { id: string }) {
+export default function HeaderSection({
+  id,
+  openModal,
+}: {
+  id: string;
+  openModal: (title: string, text: string) => void;
+}) {
   return (
     <header
       id={id}
@@ -31,13 +37,25 @@ export default function HeaderSection({ id }: { id: string }) {
               ></Input>
               <p className="mb-4 lg:mb-0 text-sm text-text-brand-tertiary">
                 We care about your data in our{" "}
-                <u className="cursor-pointer">privacy policy</u>.
+                <u
+                  className="cursor-pointer"
+                  onClick={() =>
+                    openModal(
+                      "Privacy Policy",
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Auctor augue mauris augue neque gravida in. At risus viverra adipiscing at in tellus integer. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Mattis rhoncus urna neque viverra justo nec ultrices. Consectetur purus ut faucibus pulvinar elementum. Placerat in egestas erat imperdiet sed. Ridiculus mus mauris vitae ultricies leo integer malesuada. Dolor magna eget est lorem ipsum. Eu mi bibendum neque egestas congue quisque egestas diam in. Ultrices neque ornare aenean euismod elementum nisi quis eleifend. Volutpat est velit egestas dui id ornare arcu odio ut. Ut ornare lectus sit amet est placerat in. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque. Laoreet non curabitur gravida arcu ac tortor dignissim. Vel turpis nunc eget lorem dolor sed viverra ipsum. Nec feugiat in fermentum posuere urna nec tincidunt. Etiam sit amet nisl purus in. Netus et malesuada fames ac turpis egestas sed tempus. Amet mattis vulputate enim nulla."
+                    )
+                  }
+                >
+                  privacy policy
+                </u>
+                .
               </p>
             </div>
             <Button
               text="Get started"
               type="primary"
-              redirectTo=""
+              actionType="function"
+              onClick={() => {}}
               className="h-fit w-full lg:w-auto"
             ></Button>
           </form>

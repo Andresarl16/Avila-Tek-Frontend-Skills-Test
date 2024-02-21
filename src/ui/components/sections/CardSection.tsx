@@ -9,7 +9,8 @@ export default function CardSection({
   description,
   cards,
   iconSizes,
-}: CardSection) {
+  openModal,
+}: CardSection & { openModal: (title: string, text: string) => void }) {
   return (
     <section
       id={id}
@@ -26,7 +27,12 @@ export default function CardSection({
       </p>
       <div className="grid col-start-2 col-span-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-10 sm:gap-y-12 lg:gap-y-16">
         {cards.map((card) => (
-          <Card key={card.title} card={card} iconSize={iconSizes}></Card>
+          <Card
+            key={card.title}
+            card={card}
+            iconSize={iconSizes}
+            onClick={() => openModal(card.title, card.description)}
+          ></Card>
         ))}
       </div>
     </section>

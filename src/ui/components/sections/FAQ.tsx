@@ -1,9 +1,12 @@
 import { frequentlyAskedQuestions } from "@/constants/FAQAccordion";
 import Accordion from "../Accordion";
 
-export default function FAQ() {
+export default function FAQ({ id }: { id: string }) {
   return (
-    <section className="grid sm:col-start-2 lg:col-start-3 xl:col-start-4 col-span-12 sm:col-span-10 lg:col-span-8 xl:col-span-6 pt-6 sm:pt-12 md:pt-24 pb-16 sm:pb-20 md:pb-24 px-4 sm:px-0">
+    <section
+      id={id}
+      className="grid sm:col-start-2 lg:col-start-3 xl:col-start-4 col-span-12 sm:col-span-10 lg:col-span-8 xl:col-span-6 pt-6 sm:pt-12 md:pt-24 pb-16 sm:pb-20 md:pb-24 px-4 sm:px-0"
+    >
       <h3 className="text-3xl md:text-4xl text-center font-semibold text-text-primary">
         Frequently asked questions
       </h3>

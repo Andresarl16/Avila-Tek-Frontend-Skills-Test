@@ -5,7 +5,11 @@ import { footer } from "@/constants/Footer";
 import NewBadge from "../badges/NewBadge";
 import LogoIcon from "@/ui/icons/LogoIcon";
 
-export default function Footer() {
+export default function Footer({
+  openModal,
+}: {
+  openModal: (title: string, text: string) => void;
+}) {
   return (
     <footer className="grid sm:col-start-2 col-span-12 sm:col-span-10 grid-cols-12 mt-12 sm:mt-16 mb-12 px-4 sm:px-0">
       <div className="flex flex-col-reverse sm:flex-row justify-between col-span-12">
@@ -22,7 +26,8 @@ export default function Footer() {
                     <Button
                       text={links.text}
                       type={links.type}
-                      redirectTo={links.redirectTo}
+                      actionType={"function"}
+                      onClick={() => openModal(links.text, links.description)}
                       className="pt-0 pr-0 pb-0 pl-0"
                     />
                     {links.new ? <NewBadge></NewBadge> : <></>}

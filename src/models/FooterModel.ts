@@ -3,6 +3,7 @@ import { Button } from "./ButtonModel";
 export interface FooterButton extends Button {
   type: "tertiary";
   new: boolean;
+  description: string;
 }
 
 export interface FooterLinks {

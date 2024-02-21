@@ -71,6 +71,7 @@ export default function Navbar() {
                 <Button
                   text={button.text}
                   type={button.type}
+                  actionType={button.actionType}
                   redirectTo={button.redirectTo}
                   className="pt-3 pr-4 pb-3 pl-4"
                 ></Button>

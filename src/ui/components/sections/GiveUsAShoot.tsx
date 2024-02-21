@@ -16,14 +16,16 @@ export default function GiveUsAShoot() {
             <Button
               text="Learn More"
               type="secondary"
+              actionType="internal-redirect"
               className="w-full sm:w-auto"
-              redirectTo=""
+              redirectTo="#faq"
             />
             <Button
               text="Get started"
               type="primary"
+              actionType="internal-redirect"
               className="w-full sm:w-auto"
-              redirectTo=""
+              redirectTo="/login"
             />
           </div>
         </div>

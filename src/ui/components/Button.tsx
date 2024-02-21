@@ -4,14 +4,18 @@ import Link from "next/link";
 export default function Button({
   text,
   type,
-  redirectTo,
+  actionType,
+  redirectTo = "",
+  onClick = () => {},
   icon,
   className,
 }: Button) {
   const button: Button = {
     text: text,
     type: type,
+    actionType: actionType,
     redirectTo: redirectTo,
+    onClick: onClick,
     icon: icon,
     className: className,
   };
@@ -42,24 +46,35 @@ export default function Button({
     }
   }
 
-  return (
-    <Link href={button.redirectTo}>
-      <button
-        className={`flex justify-center items-center px-5 py-3 rounded-lg font-semibold ${getButtonStyles(
-          button.type
-        )} ${className} transition-all duration-300 ease-in-out`}
-      >
-        {button.text}
-        {button.icon ? (
-          <button.icon
-            className={`pl-2 ${getIconStyles(button.type)}`}
-            width={20}
-            height={20}
-          />
-        ) : (
-          <></>
-        )}
-      </button>
-    </Link>
+  const buttonContent = (
+    <button
+      onClick={button.onClick}
+      className={`flex justify-center items-center px-5 py-3 rounded-lg font-semibold ${getButtonStyles(
+        button.type
+      )} ${className} transition-all duration-300 ease-in-out`}
+    >
+      {button.text}
+      {button.icon ? (
+        <button.icon
+          className={`pl-2 ${getIconStyles(button.type)}`}
+          width={20}
+          height={20}
+        />
+      ) : (
+        <></>
+      )}
+    </button>
   );
+
+  if (button.actionType === "function") return buttonContent;
+
+  if (button.actionType === "internal-redirect")
+    return <Link href={button.redirectTo!}> {buttonContent} </Link>;
+
+  if (button.actionType === "external-redirect")
+    return (
+      <a href={button.redirectTo} target="_blank">
+        {buttonContent}
+      </a>
+    );
 }
