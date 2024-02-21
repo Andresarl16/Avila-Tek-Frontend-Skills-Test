@@ -12,41 +12,35 @@ export const integrationCards: Array<Card> = [
     title: "Notion Integration",
     description:
       "Work faster and smarter by integrating directly with Notion, right in the app.",
-    redirectTo: "",
   },
   {
     svg: SlackIcon,
     title: "Slack Integration",
     description:
       "Work faster and smarter by integrating directly with Slack, right in the app.",
-    redirectTo: "",
   },
   {
     svg: GoogleDriveIcon,
     title: "Google Drive Integration",
     description:
       "Work faster and smarter by integrating directly with Google Drive, right in the app.",
-    redirectTo: "",
   },
   {
     svg: IntercomIcon,
     title: "Intercom Integration",
     description:
       "Work faster and smarter by integrating directly with Intercom, right in the app.",
-    redirectTo: "",
   },
   {
     svg: JiraIcon,
     title: "Jira Integration",
     description:
       "Work faster and smarter by integrating directly with Jira, right in the app.",
-    redirectTo: "",
   },
   {
     svg: DropboxIcon,
     title: "Dropbox Integration",
     description:
       "Work faster and smarter by integrating directly with Dropbox, right in the app.",
-    redirectTo: "",
   },
 ];

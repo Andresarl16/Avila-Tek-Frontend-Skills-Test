@@ -1,3 +1,5 @@
+"use client";
+
 import { Button, ButtonTypes } from "@/models/ButtonModel";
 import Link from "next/link";
 

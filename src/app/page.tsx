@@ -2,7 +2,6 @@
 
 import { featureCards } from "@/constants/FeatureCards";
 import { integrationCards } from "@/constants/IntegrationCards";
-import Button from "@/ui/components/Button";
 import Modal from "@/ui/components/Modal";
 import CardSection from "@/ui/components/sections/CardSection";
 import FAQ from "@/ui/components/sections/FAQ";

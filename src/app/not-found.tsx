@@ -13,6 +13,7 @@ export default function NotFound() {
         <Button
           text="Go Home"
           type="primary"
+          actionType="internal-redirect"
           redirectTo="/"
           className="h-fit w-full"
         ></Button>
