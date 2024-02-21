@@ -47,6 +47,9 @@ const config: Config = {
         100: "25rem",
         112: "28rem",
       },
+      screens: {
+        xs: "400px",
+      },
     },
   },
   plugins: [],
