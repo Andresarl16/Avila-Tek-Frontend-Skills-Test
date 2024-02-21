@@ -9,6 +9,6 @@ export const navbar: NavbarModel = {
   ],
   end: [
     { text: "Log in", type: "secondary", redirectTo: "/login" },
-    { text: "Sign up", type: "primary", redirectTo: "" },
+    { text: "Sign up", type: "primary", redirectTo: "/sing-up" },
   ],
 };
