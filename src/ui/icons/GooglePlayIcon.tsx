@@ -15,8 +15,8 @@ const GooglePlayIcon = (props: React.SVGProps<SVGSVGElement>) => (
     />
     <path
       stroke="#fff"
-      stroke-miterlimit="10"
-      stroke-width=".2"
+      strokeMiterlimit="10"
+      strokeWidth=".2"
       d="M47.418 10.243c0 .838-.248 1.505-.745 2.003-.564.592-1.3.888-2.204.888-.866 0-1.603-.3-2.208-.9-.606-.6-.909-1.345-.909-2.233 0-.889.303-1.633.91-2.233.604-.6 1.341-.9 2.207-.9.43 0 .841.083 1.231.25.391.168.704.391.938.67l-.527.528c-.397-.475-.944-.712-1.643-.712-.632 0-1.178.222-1.639.666-.461.444-.69 1.021-.69 1.73 0 .71.229 1.286.69 1.73a2.282 2.282 0 0 0 1.639.666c.67 0 1.23-.223 1.676-.67.29-.29.458-.696.503-1.215h-2.179v-.72h2.907c.03.156.043.307.043.452Zm4.61-2.506h-2.732V9.64h2.464v.721h-2.464v1.902h2.732V13h-3.503V7h3.503v.737ZM55.279 13h-.771V7.737h-1.676V7h4.123v.737h-1.676V13Zm4.659 0V7h.771v6h-.771Zm4.19 0h-.77V7.737H61.68V7h4.123v.737h-1.676V13Zm9.481-.775c-.59.606-1.323.91-2.2.91-.877 0-1.61-.304-2.2-.91-.59-.606-.883-1.348-.883-2.225s.294-1.619.884-2.225c.589-.606 1.322-.91 2.199-.91.872 0 1.604.305 2.196.914.592.61.888 1.35.888 2.221 0 .877-.295 1.62-.884 2.225Zm-3.83-.503a2.2 2.2 0 0 0 1.63.674c.643 0 1.187-.225 1.63-.674.444-.45.667-1.024.667-1.722s-.223-1.272-.667-1.722a2.199 2.199 0 0 0-1.63-.674c-.643 0-1.186.225-1.63.674-.443.45-.666 1.024-.666 1.722s.223 1.272.666 1.722ZM75.575 13V7h.938l2.916 4.667h.033l-.033-1.156v-3.51h.77v6h-.804l-3.051-4.895h-.033l.033 1.156V13h-.77Z"
     />
     <g filter="url(#a)">
@@ -48,12 +48,12 @@ const GooglePlayIcon = (props: React.SVGProps<SVGSVGElement>) => (
         y2="25.491"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#00A0FF" />
-        <stop offset=".007" stop-color="#00A1FF" />
-        <stop offset=".26" stop-color="#00BEFF" />
-        <stop offset=".512" stop-color="#00D2FF" />
-        <stop offset=".76" stop-color="#00DFFF" />
-        <stop offset="1" stop-color="#00E3FF" />
+        <stop stopColor="#00A0FF" />
+        <stop offset=".007" stopColor="#00A1FF" />
+        <stop offset=".26" stopColor="#00BEFF" />
+        <stop offset=".512" stopColor="#00D2FF" />
+        <stop offset=".76" stopColor="#00DFFF" />
+        <stop offset="1" stopColor="#00E3FF" />
       </linearGradient>
       <linearGradient
         id="c"
@@ -63,10 +63,10 @@ const GooglePlayIcon = (props: React.SVGProps<SVGSVGElement>) => (
         y2="20.001"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FFE000" />
-        <stop offset=".409" stop-color="#FFBD00" />
-        <stop offset=".775" stop-color="orange" />
-        <stop offset="1" stop-color="#FF9C00" />
+        <stop stopColor="#FFE000" />
+        <stop offset=".409" stopColor="#FFBD00" />
+        <stop offset=".775" stopColor="orange" />
+        <stop offset="1" stopColor="#FF9C00" />
       </linearGradient>
       <linearGradient
         id="e"
@@ -76,8 +76,8 @@ const GooglePlayIcon = (props: React.SVGProps<SVGSVGElement>) => (
         y2="45.053"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FF3A44" />
-        <stop offset="1" stop-color="#C31162" />
+        <stop stopColor="#FF3A44" />
+        <stop offset="1" stopColor="#C31162" />
       </linearGradient>
       <linearGradient
         id="f"
@@ -87,11 +87,11 @@ const GooglePlayIcon = (props: React.SVGProps<SVGSVGElement>) => (
         y2="10.339"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#32A071" />
-        <stop offset=".069" stop-color="#2DA771" />
-        <stop offset=".476" stop-color="#15CF74" />
-        <stop offset=".801" stop-color="#06E775" />
-        <stop offset="1" stop-color="#00F076" />
+        <stop stopColor="#32A071" />
+        <stop offset=".069" stopColor="#2DA771" />
+        <stop offset=".476" stopColor="#15CF74" />
+        <stop offset=".801" stopColor="#06E775" />
+        <stop offset="1" stopColor="#00F076" />
       </linearGradient>
       <filter
         id="a"
@@ -99,10 +99,10 @@ const GooglePlayIcon = (props: React.SVGProps<SVGSVGElement>) => (
         height="25.721"
         x="9.973"
         y="7.141"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
         filterUnits="userSpaceOnUse"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
         <feColorMatrix
           in="SourceAlpha"
@@ -132,10 +132,10 @@ const GooglePlayIcon = (props: React.SVGProps<SVGSVGElement>) => (
         height="12.861"
         x="10.436"
         y="20.001"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
         filterUnits="userSpaceOnUse"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
         <feColorMatrix
           in="SourceAlpha"

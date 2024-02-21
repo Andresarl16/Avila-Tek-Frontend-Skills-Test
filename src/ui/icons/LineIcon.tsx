@@ -7,13 +7,7 @@ const LineIcon = (props: React.SVGProps<SVGSVGElement>) => (
     viewBox="0 0 20 2"
     {...props}
   >
-    <path
-      stroke="#344054"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2"
-      d="M1 1h18M1"
-    />
+    <path stroke="#344054" strokeLinecap="round" strokeWidth="2" d="M1 1h18" />
   </svg>
 );
 

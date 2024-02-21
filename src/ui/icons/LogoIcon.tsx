@@ -8,7 +8,7 @@ const LogoIcon = (props: React.SVGProps<SVGSVGElement>) => (
     {...props}
   >
     <g filter="url(#filter0_dd_2705_939)">
-      <g clip-path="url(#clip0_2705_939)">
+      <g clipPath="url(#clip0_2705_939)">
         <path
           d="M3 14.8C3 10.3196 3 8.07937 3.87195 6.36808C4.63893 4.86278 5.86278 3.63893 7.36808 2.87195C9.07937 2 11.3196 2 15.8 2H22.2C26.6804 2 28.9206 2 30.6319 2.87195C32.1372 3.63893 33.3611 4.86278 34.1281 6.36808C35 8.07937 35 10.3196 35 14.8V21.2C35 25.6804 35 27.9206 34.1281 29.6319C33.3611 31.1372 32.1372 32.3611 30.6319 33.1281C28.9206 34 26.6804 34 22.2 34H15.8C11.3196 34 9.07937 34 7.36808 33.1281C5.86278 32.3611 4.63893 31.1372 3.87195 29.6319C3 27.9206 3 25.6804 3 21.2V14.8Z"
           fill="white"
@@ -18,20 +18,20 @@ const LogoIcon = (props: React.SVGProps<SVGSVGElement>) => (
           fill="url(#paint0_linear_2705_939)"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M19 4.03861C11.2895 4.03861 5.03885 10.2892 5.03885 17.9998C5.03885 25.7103 11.2895 31.9609 19 31.9609C26.7106 31.9609 32.9612 25.7103 32.9612 17.9998C32.9612 10.2892 26.7106 4.03861 19 4.03861ZM4.96118 17.9998C4.96118 10.2463 11.2466 3.96094 19 3.96094C26.7535 3.96094 33.0389 10.2463 33.0389 17.9998C33.0389 25.7532 26.7535 32.0386 19 32.0386C11.2466 32.0386 4.96118 25.7532 4.96118 17.9998Z"
           fill="#D0D5DD"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M19 14.0777C16.8338 14.0777 15.0777 15.8338 15.0777 18C15.0777 20.1662 16.8338 21.9223 19 21.9223C21.1662 21.9223 22.9223 20.1662 22.9223 18C22.9223 15.8338 21.1662 14.0777 19 14.0777ZM15 18C15 15.7909 16.7909 14 19 14C21.2091 14 23 15.7909 23 18C23 20.2091 21.2091 22 19 22C16.7909 22 15 20.2091 15 18Z"
           fill="#D0D5DD"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M19 15.3199C17.52 15.3199 16.3203 16.5196 16.3203 17.9995C16.3203 19.4794 17.52 20.6791 19 20.6791C20.4799 20.6791 21.6796 19.4794 21.6796 17.9995C21.6796 16.5196 20.4799 15.3199 19 15.3199ZM16.2427 17.9995C16.2427 16.4767 17.4772 15.2422 19 15.2422C20.5228 15.2422 21.7572 16.4767 21.7572 17.9995C21.7572 19.5223 20.5228 20.7568 19 20.7568C17.4772 20.7568 16.2427 19.5223 16.2427 17.9995Z"
           fill="#D0D5DD"
         />
@@ -67,14 +67,14 @@ const LogoIcon = (props: React.SVGProps<SVGSVGElement>) => (
           <path
             d="M3 18H35V21.2C35 25.6804 35 27.9206 34.1281 29.6319C33.3611 31.1372 32.1372 32.3611 30.6319 33.1281C28.9206 34 26.6804 34 22.2 34H15.8C11.3196 34 9.07937 34 7.36808 33.1281C5.86278 32.3611 4.63893 31.1372 3.87195 29.6319C3 27.9206 3 25.6804 3 21.2V18Z"
             fill="white"
-            fill-opacity="0.2"
+            fillOpacity="0.2"
           />
         </g>
       </g>
       <path
         d="M3.1 14.8C3.1 12.5581 3.10008 10.8828 3.20866 9.55376C3.31715 8.22593 3.53345 7.25268 3.96105 6.41348C4.71845 4.92699 5.92699 3.71845 7.41348 2.96105C8.25268 2.53345 9.22593 2.31715 10.5538 2.20866C11.8828 2.10008 13.5581 2.1 15.8 2.1H22.2C24.4419 2.1 26.1172 2.10008 27.4462 2.20866C28.7741 2.31715 29.7473 2.53345 30.5865 2.96105C32.073 3.71845 33.2816 4.92699 34.039 6.41348C34.4665 7.25268 34.6828 8.22593 34.7913 9.55376C34.8999 10.8828 34.9 12.5581 34.9 14.8V21.2C34.9 23.4419 34.8999 25.1172 34.7913 26.4462C34.6828 27.7741 34.4665 28.7473 34.039 29.5865C33.2816 31.073 32.073 32.2816 30.5865 33.039C29.7473 33.4665 28.7741 33.6828 27.4462 33.7913C26.1172 33.8999 24.4419 33.9 22.2 33.9H15.8C13.5581 33.9 11.8828 33.8999 10.5538 33.7913C9.22593 33.6828 8.25268 33.4665 7.41348 33.039C5.92699 32.2816 4.71845 31.073 3.96105 29.5865C3.53345 28.7473 3.31715 27.7741 3.20866 26.4462C3.10008 25.1172 3.1 23.4419 3.1 21.2V14.8Z"
         stroke="#D0D5DD"
-        stroke-width="0.2"
+        strokeWidth="0.2"
       />
     </g>
     <path
@@ -119,9 +119,9 @@ const LogoIcon = (props: React.SVGProps<SVGSVGElement>) => (
         width="38"
         height="38"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -170,9 +170,9 @@ const LogoIcon = (props: React.SVGProps<SVGSVGElement>) => (
         width="22"
         height="22"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -221,9 +221,9 @@ const LogoIcon = (props: React.SVGProps<SVGSVGElement>) => (
         width="42"
         height="26"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feGaussianBlur in="BackgroundImageFix" stdDeviation="2.5" />
         <feComposite
           in2="SourceAlpha"
@@ -245,8 +245,8 @@ const LogoIcon = (props: React.SVGProps<SVGSVGElement>) => (
         y2="34"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="#D0D5DD" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="#D0D5DD" />
       </linearGradient>
       <linearGradient
         id="paint1_linear_2705_939"
@@ -256,8 +256,8 @@ const LogoIcon = (props: React.SVGProps<SVGSVGElement>) => (
         y2="10"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#53389E" />
-        <stop offset="1" stop-color="#6941C6" />
+        <stop stopColor="#53389E" />
+        <stop offset="1" stopColor="#6941C6" />
       </linearGradient>
       <clipPath id="clip0_2705_939">
         <path

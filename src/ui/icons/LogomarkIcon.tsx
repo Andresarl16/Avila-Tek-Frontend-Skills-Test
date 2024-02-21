@@ -10,7 +10,7 @@ const LogomarkIcon = (props: React.SVGProps<SVGSVGElement>) => (
     {...props}
   >
     <g filter="url(#a)">
-      <g clip-path="url(#b)">
+      <g clipPath="url(#b)">
         <path
           fill="#fff"
           d="M3 14.8c0-4.48 0-6.72.872-8.432a8 8 0 0 1 3.496-3.496C9.08 2 11.32 2 15.8 2h6.4c4.48 0 6.72 0 8.432.872a8 8 0 0 1 3.496 3.496C35 8.08 35 10.32 35 14.8v6.4c0 4.48 0 6.72-.872 8.432a8 8 0 0 1-3.496 3.496C28.92 34 26.68 34 22.2 34h-6.4c-4.48 0-6.72 0-8.432-.872a8 8 0 0 1-3.496-3.496C3 27.92 3 25.68 3 21.2v-6.4Z"
@@ -53,7 +53,7 @@ const LogomarkIcon = (props: React.SVGProps<SVGSVGElement>) => (
         <g filter="url(#f)">
           <path
             fill="#fff"
-            fill-opacity=".2"
+            fillOpacity=".2"
             d="M3 18h32v3.2c0 4.48 0 6.72-.872 8.432a8 8 0 0 1-3.496 3.496C28.92 34 26.68 34 22.2 34h-6.4c-4.48 0-6.72 0-8.432-.872a8 8 0 0 1-3.496-3.496C3 27.92 3 25.68 3 21.2V18Z"
           />
         </g>
