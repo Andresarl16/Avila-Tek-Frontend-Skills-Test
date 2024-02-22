@@ -19,7 +19,7 @@ export default function SingUp() {
           Back to Untitled UI
         </Link>
         <h2 className="text-5xl my-8 text-text-brand-primary text-center font-semibold">
-          Sing Up <br />
+          Sign Up <br />
         </h2>
         <form
           action=""
@@ -46,7 +46,7 @@ export default function SingUp() {
             className="w-full"
           ></Input>
           <Button
-            text="Sing Up"
+            text="Sign Up"
             type="primary"
             actionType="function"
             onClick={() => {}}

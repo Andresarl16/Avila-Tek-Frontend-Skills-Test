@@ -45,9 +45,9 @@ export default function LogIn() {
         </form>
         <p className="text-text-brand-primary mt-6">
           {"Don't have an account?"}
-          <Link href={"/sing-up"}>
+          <Link href={"/sign-up"}>
             {" "}
-            <u>Sing up</u>
+            <u>Sign up</u>
           </Link>
         </p>
       </section>

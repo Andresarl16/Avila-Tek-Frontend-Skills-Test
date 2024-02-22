@@ -18,7 +18,7 @@ export const navbar: NavbarModel = {
       text: "Sign up",
       type: "primary",
       actionType: "internal-redirect",
-      redirectTo: "/sing-up",
+      redirectTo: "/sign-up",
     },
   ],
 };
