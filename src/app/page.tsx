@@ -28,7 +28,7 @@ export default function Home() {
 
   return (
     <main className="max-w-full grid grid-cols-12">
-      <div className="fixed top-0 z-10 w-full grid grid-cols-12">
+      <div className="fixed top-0 z-20 w-full grid grid-cols-12 bg-bg-primary bg-opacity-95">
         <Navbar></Navbar>
       </div>
       <HeaderSection id="home" openModal={openModal}></HeaderSection>

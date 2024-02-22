@@ -11,18 +11,28 @@ const ScrollRevealContainer = ({
   easing = "ease-in-out",
   origin = "bottom",
   children,
-}: ScrollRevealModel & { children: ReactNode }) => {
+  id,
+  className = "",
+}: ScrollRevealModel & {
+  children: ReactNode;
+  id: string;
+  className?: string;
+}) => {
   useEffect(() => {
-    ScrollReveal().reveal(".scroll-reveal-container", {
+    ScrollReveal().reveal(`#${id}`, {
       duration: duration,
       delay: delay,
       distance: distance,
       easing: easing,
       origin: origin,
     });
-  }, [delay, distance, duration, easing, origin]);
+  }, [delay, distance, duration, easing, id, origin]);
 
-  return <div className="scroll-reveal-container">{children}</div>;
+  return (
+    <div id={id} className={`${className}`}>
+      {children}
+    </div>
+  );
 };
 
 export default ScrollRevealContainer;

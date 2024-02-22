@@ -1,6 +1,7 @@
 import Button from "../Button";
 import Image from "next/image";
 import Picture from "../Picture";
+import ScrollRevealContainer from "../ScrollRevealContainer";
 
 export default function FreeTrial({ id }: { id: string }) {
   return (
@@ -9,7 +10,12 @@ export default function FreeTrial({ id }: { id: string }) {
       className="grid col-span-12 grid-cols-12 bg-bg-secondary py-16 lg:py-24"
     >
       <div className="grid col-start-2 col-span-10 grid-cols-12">
-        <div className="flex flex-col col-span-12 lg:col-span-7 justify-center">
+        <ScrollRevealContainer
+          id="free-trial-text"
+          origin="left"
+          distance="75px"
+          className="flex flex-col col-span-12 lg:col-span-7 justify-center"
+        >
           <h2 className="text-3xl sm:text-4xl xl:text-5xl text-text-primary font-semibold">
             No long-term contracts. <br /> No catches.
           </h2>
@@ -32,8 +38,14 @@ export default function FreeTrial({ id }: { id: string }) {
               className="w-full sm:w-auto"
             />
           </div>
-        </div>
-        <div className="col-span-12 lg:col-span-5 space-y-2 xs:space-y-4 lg:space-y-5">
+        </ScrollRevealContainer>
+        <ScrollRevealContainer
+          id="free-trial-gallery"
+          origin="right"
+          distance="75px"
+          delay={600}
+          className="col-span-12 lg:col-span-5 space-y-2 xs:space-y-4 lg:space-y-5"
+        >
           <div className="flex flex-col sm:flex-row justify-center items-end space-x-0 sm:space-x-5 space-y-2 xs:space-y-4 sm:space-y-0">
             <Picture
               pictures={[
@@ -108,7 +120,7 @@ export default function FreeTrial({ id }: { id: string }) {
               className="relative w-full sm:w-48 h-40 xs:h-60 sm:h-32"
             />
           </div>
-        </div>
+        </ScrollRevealContainer>
       </div>
     </section>
   );

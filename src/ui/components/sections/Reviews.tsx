@@ -1,10 +1,16 @@
 import StarIcon from "@/ui/icons/StarIcon";
 import Image from "next/image";
+import ScrollRevealContainer from "../ScrollRevealContainer";
 
 export default function Reviews() {
   return (
     <section className="grid col-span-12 grid-cols-12">
-      <div className="grid sm:col-start-2 col-span-12 sm:col-span-10 grid-cols-12 bg-bg-brand-section my-16 sm:my-24 mx-4 sm:mx-0 rounded-t-3xl lg:rounded-l-3xl rounded-b-2xl lg:rounded-r-2xl">
+      <ScrollRevealContainer
+        id="review-card"
+        origin="left"
+        distance="150px"
+        className="grid sm:col-start-2 col-span-12 sm:col-span-10 grid-cols-12 bg-bg-brand-section my-16 sm:my-24 mx-4 sm:mx-0 rounded-t-3xl lg:rounded-l-3xl rounded-b-2xl lg:rounded-r-2xl"
+      >
         <div className="relative col-span-12 lg:col-span-5 h-72 sm:h-96 md:h-112 rounded-t-2xl lg:rounded-r-none lg:rounded-l-2xl">
           <Image
             alt="Reviewer Picture"
@@ -33,7 +39,7 @@ export default function Reviews() {
             Product Designer, Quotient
           </p>
         </div>
-      </div>
+      </ScrollRevealContainer>
     </section>
   );
 }

@@ -1,5 +1,6 @@
 import { AccordionElement } from "@/models/AccordionModel";
 import AccordionItem from "./AccordionItem";
+import ScrollRevealContainer from "./ScrollRevealContainer";
 
 export default function Accordion({
   items,
@@ -9,10 +10,20 @@ export default function Accordion({
   return (
     <ul>
       {items.map((item, index) => (
-        <li key={item.title}>
-          {index == 0 ? <></> : <hr className="my-7 border-border-secondary" />}
-          <AccordionItem title={item.title} description={item.description} />
-        </li>
+        <ScrollRevealContainer
+          id={`accordion-item-${index}`}
+          key={item.title}
+          distance="75px"
+        >
+          <li>
+            {index == 0 ? (
+              <></>
+            ) : (
+              <hr className="my-7 border-border-secondary" />
+            )}
+            <AccordionItem title={item.title} description={item.description} />
+          </li>
+        </ScrollRevealContainer>
       ))}{" "}
     </ul>
   );
