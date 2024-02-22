@@ -1,6 +1,6 @@
 import { Card, IconSizes } from "@/models/CardModel";
 import Button from "./Button";
-import RightArrowIcon from "../icons/RightArrowIcon";
+import RightArrowIcon from "../../icons/RightArrowIcon";
 
 export default function Card({
   card,

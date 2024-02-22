@@ -1,8 +1,8 @@
 import dynamic from "next/dynamic";
-import Button from "../Button";
-import Picture from "../Picture";
+import Button from "../general/Button";
+import Picture from "../general/Picture";
 const ScrollRevealContainer = dynamic(
-  () => import("../ScrollRevealContainer"),
+  () => import("../general/ScrollRevealContainer"),
   {
     ssr: false,
   }

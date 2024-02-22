@@ -1,9 +1,9 @@
 import { CardSection } from "@/models/CardModel";
 import dynamic from "next/dynamic";
-import Card from "../Card";
+import Card from "../general/Card";
 import SectionBadge from "../badges/SectionBadge";
 const ScrollRevealContainer = dynamic(
-  () => import("../ScrollRevealContainer"),
+  () => import("../general/ScrollRevealContainer"),
   {
     ssr: false,
   }
@@ -21,7 +21,7 @@ export default function CardSection({
   return (
     <section
       id={id}
-      className="grid col-span-12 grid-cols-12 mb-16 md:mb-20 lg:mb-24 px-4 md:px-0"
+      className="grid col-span-12 grid-cols-12 mb-16 md:mb-20 lg:mb-24 px-4 md:px-0 pt-24 sm:pt-28 lg:pt-32"
     >
       <ScrollRevealContainer
         id={`badge-${badge.replace(" ", "-")}`}

@@ -1,6 +1,6 @@
 import { footer } from "@/constants/Footer";
 import LogoIcon from "@/ui/icons/LogoIcon";
-import Button from "../Button";
+import Button from "../general/Button";
 import NewBadge from "../badges/NewBadge";
 
 export default function Footer({

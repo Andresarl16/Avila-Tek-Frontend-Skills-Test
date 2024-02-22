@@ -2,7 +2,7 @@
 
 import { featureCards } from "@/constants/FeatureCards";
 import { integrationCards } from "@/constants/IntegrationCards";
-import Modal from "@/ui/components/Modal";
+import Modal from "@/ui/components/general/Modal";
 import CardSection from "@/ui/components/sections/CardSection";
 import FAQ from "@/ui/components/sections/FAQ";
 import Footer from "@/ui/components/sections/Footer";
@@ -28,7 +28,7 @@ export default function Home() {
 
   return (
     <main className="max-w-full grid grid-cols-12">
-      <div className="fixed top-0 z-20 w-full grid grid-cols-12 bg-bg-primary bg-opacity-95">
+      <div className="fixed top-0 z-20 w-full grid grid-cols-12 bg-bg-primary bg-opacity-90">
         <Navbar></Navbar>
       </div>
       <HeaderSection id="home" openModal={openModal}></HeaderSection>

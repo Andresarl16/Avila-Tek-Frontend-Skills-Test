@@ -1,9 +1,14 @@
-import Button from "../Button";
+"use client";
+
+import Button from "../general/Button";
 import Image from "next/image";
-import Input from "@/ui/components/Input";
+import Input from "@/ui/components/general/Input";
 import dynamic from "next/dynamic";
+import { Slide, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { useState } from "react";
 const ScrollRevealContainer = dynamic(
-  () => import("../ScrollRevealContainer"),
+  () => import("../general/ScrollRevealContainer"),
   {
     ssr: false,
   }
@@ -16,11 +21,24 @@ export default function HeaderSection({
   id: string;
   openModal: (title: string, text: string) => void;
 }) {
+  const [email, setEmail] = useState("");
+
+  const showEmail = () => {
+    toast.success(`Email read: ${email}`, {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Slide,
+    });
+  };
+
   return (
-    <header
-      id={id}
-      className="grid col-span-12 grid-cols-12 pt-0 sm:pt-24 mb-24 sm:mb-28 lg:mb-32"
-    >
+    <header id={id} className="grid col-span-12 grid-cols-12 pt-0 sm:pt-24">
       <ScrollRevealContainer
         id="header-card"
         origin="left"
@@ -46,6 +64,10 @@ export default function HeaderSection({
                 placeholder="Enter your email"
                 tooltip="Enter your email"
                 className="w-full lg:max-w-96"
+                value={email}
+                onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
+                  setEmail(event.target.value)
+                }
               ></Input>
               <p className="mb-4 lg:mb-0 text-sm text-text-brand-tertiary">
                 We care about your data in our{" "}
@@ -66,8 +88,8 @@ export default function HeaderSection({
             <Button
               text="Get started"
               type="primary"
+              onClick={showEmail}
               actionType="function"
-              onClick={() => {}}
               className="h-fit w-full lg:w-auto"
             ></Button>
           </form>

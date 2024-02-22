@@ -1,13 +1,24 @@
 "use client";
 
-import Button from "@/ui/components/Button";
-import Input from "@/ui/components/Input";
+import Button from "@/ui/components/general/Button";
+import Input from "@/ui/components/general/Input";
 import RightArrowIcon from "@/ui/icons/RightArrowIcon";
+import dynamic from "next/dynamic";
 import Link from "next/link";
+const ScrollRevealContainer = dynamic(
+  () => import("@/ui/components/general/ScrollRevealContainer"),
+  {
+    ssr: false,
+  }
+);
 
 export default function SingUp() {
   return (
-    <main className="flex w-full h-screen min-h-[592px] py-4 justify-center items-center">
+    <ScrollRevealContainer
+      id="sign-in"
+      distance="0px"
+      className="flex w-full h-screen min-h-[592px] py-4 justify-center items-center"
+    >
       <section className="w-full max-w-md  px-6 pt-6 pb-12 mx-4 md:mx-0 bg-bg-brand-section rounded-2xl">
         <Link href="/" className="flex items-center text-text-brand-primary">
           <RightArrowIcon
@@ -61,6 +72,6 @@ export default function SingUp() {
           </Link>
         </p>
       </section>
-    </main>
+    </ScrollRevealContainer>
   );
 }

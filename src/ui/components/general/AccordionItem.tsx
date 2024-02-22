@@ -2,7 +2,7 @@
 
 import { AccordionElement } from "@/models/AccordionModel";
 import { useState } from "react";
-import MinusIcon from "../icons/MinusIcon";
+import MinusIcon from "../../icons/MinusIcon";
 
 export default function AccordionItem({
   title,

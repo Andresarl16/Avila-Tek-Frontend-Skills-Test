@@ -51,6 +51,7 @@ export default function Button({
   const buttonContent = (
     <button
       onClick={button.onClick}
+      type="button"
       className={`flex justify-center items-center px-5 py-3 rounded-lg font-semibold ${getButtonStyles(
         button.type
       )} ${className} transition-all duration-300 ease-in-out`}

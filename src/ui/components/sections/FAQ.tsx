@@ -1,8 +1,8 @@
 import { frequentlyAskedQuestions } from "@/constants/FAQAccordion";
 import dynamic from "next/dynamic";
-import Accordion from "../Accordion";
+import Accordion from "../general/Accordion";
 const ScrollRevealContainer = dynamic(
-  () => import("../ScrollRevealContainer"),
+  () => import("../general/ScrollRevealContainer"),
   {
     ssr: false,
   }

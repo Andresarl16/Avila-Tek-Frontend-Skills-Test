@@ -2,7 +2,7 @@
 
 import { navbar } from "@/constants/Navbar";
 import LogoIcon from "@/ui/icons/LogoIcon";
-import Button from "../Button";
+import Button from "../general/Button";
 import Link from "next/link";
 import { useState } from "react";
 import LineIcon from "@/ui/icons/LineIcon";
@@ -11,7 +11,7 @@ export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
 
   return (
-    <nav className="flex flex-col lg:flex-row items-center sm:col-start-2 col-span-12 sm:col-span-10 grid-cols-12 px-4 sm:px-0 py-4 bg-bg-primary bg-opacity-95">
+    <nav className="flex flex-col lg:flex-row items-center sm:col-start-2 col-span-12 sm:col-span-10 grid-cols-12 px-4 sm:px-0 py-4">
       <div className="flex w-full lg:w-auto justify-between items-center">
         <LogoIcon className="w-[123px] lg:w-[145px] h-[32px] lg:h-[38px] mr-10"></LogoIcon>
 
@@ -56,8 +56,14 @@ export default function Navbar() {
             }`}
           >
             {navbar.start.map((link) => (
-              <li key={link.text} className="font-semibold text-text-tertiary">
-                <Link href={link.section}> {link.text} </Link>
+              <li
+                key={link.text}
+                className="font-semibold text-text-tertiary hover:text-text-primary transition-all duration-300"
+              >
+                <Link href={link.section} className="group">
+                  {link.text}
+                  <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-text-primary"></span>
+                </Link>
               </li>
             ))}
           </ul>

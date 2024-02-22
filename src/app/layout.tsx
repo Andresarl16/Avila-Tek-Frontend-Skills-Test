@@ -1,6 +1,7 @@
 import { inter } from "@/ui/fonts/fonts";
 import type { Metadata } from "next";
 import "./globals.css";
+import { ToastContainer } from "react-toastify";
 
 export const metadata: Metadata = {
   title: "Front End Skills Test",
@@ -16,6 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="relative overflow-x-hidden">{children}</div>
+        <ToastContainer />
       </body>
     </html>
   );

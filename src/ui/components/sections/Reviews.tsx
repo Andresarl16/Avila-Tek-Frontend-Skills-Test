@@ -2,7 +2,7 @@ import StarIcon from "@/ui/icons/StarIcon";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 const ScrollRevealContainer = dynamic(
-  () => import("../ScrollRevealContainer"),
+  () => import("../general/ScrollRevealContainer"),
   {
     ssr: false,
   }
