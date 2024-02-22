@@ -1,7 +1,7 @@
 import { CardSection } from "@/models/CardModel";
+import dynamic from "next/dynamic";
 import Card from "../Card";
 import SectionBadge from "../badges/SectionBadge";
-import dynamic from "next/dynamic";
 const ScrollRevealContainer = dynamic(
   () => import("../ScrollRevealContainer"),
   {

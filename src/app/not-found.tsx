@@ -1,7 +1,4 @@
 import Button from "@/ui/components/Button";
-import Input from "@/ui/components/Input";
-import RightArrowIcon from "@/ui/icons/RightArrowIcon";
-import Link from "next/link";
 
 export default function NotFound() {
   return (

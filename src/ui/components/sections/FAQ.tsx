@@ -1,6 +1,6 @@
 import { frequentlyAskedQuestions } from "@/constants/FAQAccordion";
-import Accordion from "../Accordion";
 import dynamic from "next/dynamic";
+import Accordion from "../Accordion";
 const ScrollRevealContainer = dynamic(
   () => import("../ScrollRevealContainer"),
   {

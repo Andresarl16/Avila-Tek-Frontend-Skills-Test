@@ -1,9 +1,7 @@
-import StarIcon from "@/ui/icons/StarIcon";
-import Button from "../Button";
-import Image from "next/image";
 import { footer } from "@/constants/Footer";
-import NewBadge from "../badges/NewBadge";
 import LogoIcon from "@/ui/icons/LogoIcon";
+import Button from "../Button";
+import NewBadge from "../badges/NewBadge";
 
 export default function Footer({
   openModal,

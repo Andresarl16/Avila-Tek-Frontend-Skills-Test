@@ -1,4 +1,3 @@
-import QuestionMarIcon from "../icons/QuestionMarkIcon";
 import { Positions, Tooltip } from "@/models/TooltipModel";
 
 export default function Tooltip({ text, position, children }: Tooltip) {
