@@ -1,6 +1,12 @@
 import { frequentlyAskedQuestions } from "@/constants/FAQAccordion";
 import Accordion from "../Accordion";
-import ScrollRevealContainer from "../ScrollRevealContainer";
+import dynamic from "next/dynamic";
+const ScrollRevealContainer = dynamic(
+  () => import("../ScrollRevealContainer"),
+  {
+    ssr: false,
+  }
+);
 
 export default function FAQ({ id }: { id: string }) {
   return (

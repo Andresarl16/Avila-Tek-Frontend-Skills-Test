@@ -1,7 +1,13 @@
 import Button from "../Button";
 import Image from "next/image";
 import Picture from "../Picture";
-import ScrollRevealContainer from "../ScrollRevealContainer";
+import dynamic from "next/dynamic";
+const ScrollRevealContainer = dynamic(
+  () => import("../ScrollRevealContainer"),
+  {
+    ssr: false,
+  }
+);
 
 export default function FreeTrial({ id }: { id: string }) {
   return (

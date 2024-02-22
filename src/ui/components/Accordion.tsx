@@ -1,6 +1,9 @@
 import { AccordionElement } from "@/models/AccordionModel";
 import AccordionItem from "./AccordionItem";
-import ScrollRevealContainer from "./ScrollRevealContainer";
+import dynamic from "next/dynamic";
+const ScrollRevealContainer = dynamic(() => import("./ScrollRevealContainer"), {
+  ssr: false,
+});
 
 export default function Accordion({
   items,

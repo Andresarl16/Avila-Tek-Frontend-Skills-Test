@@ -1,7 +1,13 @@
 import { CardSection } from "@/models/CardModel";
 import Card from "../Card";
 import SectionBadge from "../badges/SectionBadge";
-import ScrollRevealContainer from "../ScrollRevealContainer";
+import dynamic from "next/dynamic";
+const ScrollRevealContainer = dynamic(
+  () => import("../ScrollRevealContainer"),
+  {
+    ssr: false,
+  }
+);
 
 export default function CardSection({
   id,
