@@ -20,6 +20,11 @@ export default function Home() {
 
   const handleClose = () => setModalVisible(false);
 
+  /**
+   * Function to open the modal, updating its title and content
+   * @param title Modal Title
+   * @param text Modal Content text
+   */
   function openModal(title: string, text: string) {
     setModalTitle(title);
     setModalText(text);

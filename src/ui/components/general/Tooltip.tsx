@@ -1,6 +1,11 @@
 import { Positions, Tooltip } from "@/models/TooltipModel";
 
 export default function Tooltip({ text, position, children }: Tooltip) {
+  /**
+   * Function to obtain the styles corresponding to the Tooltip position
+   * @param position Tooltip Position
+   * @returns Styles of the corresponding tooltip, empty string in case of invalid position
+   */
   function getTooltipStyles(position: Positions) {
     switch (position) {
       case "top":
@@ -16,7 +21,12 @@ export default function Tooltip({ text, position, children }: Tooltip) {
     }
   }
 
-  function getTriangleStyles(position: Positions) {
+  /**
+   * Function to obtain the styles corresponding to the Arrow corresponding to the position of the tooltip
+   * @param position Tooltip Position
+   * @returns Styles of the corresponding arrow, empty string in case of invalid position
+   */
+  function getArrowStyles(position: Positions) {
     switch (position) {
       case "top":
         return "left-1/2 -translate-x-1/2 bottom-full border-l-transparent border-r-transparent border-b-0 border-t-bg-tertiary";
@@ -43,7 +53,7 @@ export default function Tooltip({ text, position, children }: Tooltip) {
         {text}{" "}
       </span>
       <span
-        className={`absolute hidden group-hover:inline-block border-[5px] ${getTriangleStyles(
+        className={`absolute hidden group-hover:inline-block border-[5px] ${getArrowStyles(
           position
         )}`}
       ></span>

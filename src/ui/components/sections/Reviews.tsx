@@ -34,7 +34,7 @@ export default function Reviews() {
                 origin="bottom"
                 distance="20px"
                 duration={600}
-                delay={400 + 100 * index}
+                delay={300 + 100 * index}
                 key={index}
               >
                 <li>

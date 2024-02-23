@@ -22,6 +22,11 @@ export default function Button({
     className: className,
   };
 
+  /**
+   * Function to obtain the styles corresponding to the selected button type.
+   * @param type Button Type
+   * @returns Styles of the corresponding type, empty string in case of invalid type
+   */
   function getButtonStyles(type: ButtonTypes) {
     switch (type) {
       case "primary":
@@ -35,6 +40,11 @@ export default function Button({
     }
   }
 
+  /**
+   * Function to obtain the styles corresponding to the icon of the selected button type.
+   * @param type Button Type
+   * @returns Icon styles of the corresponding type, empty string in case of invalid type
+   */
   function getIconStyles(type: ButtonTypes) {
     switch (type) {
       case "primary":
