@@ -43,7 +43,7 @@ export default function LogIn() {
           ></Input>
           <Input
             placeholder="Password"
-            tooltip="Enter your email"
+            tooltip="Enter your password"
             className="w-full"
           ></Input>
           <Button
