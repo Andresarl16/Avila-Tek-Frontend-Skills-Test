@@ -10,7 +10,7 @@ const ScrollRevealContainer = dynamic(
 
 export default function GiveUsAShoot() {
   return (
-    <section className="grid col-span-12 grid-cols-12 mb-16 md:mb-20 lg:mb-24 ">
+    <section className="grid col-span-12 grid-cols-12">
       <ScrollRevealContainer
         id="give-us-a-shoot"
         origin="right"
