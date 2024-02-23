@@ -13,8 +13,9 @@ export default function Navbar() {
   return (
     <nav className="flex flex-col lg:flex-row items-center sm:col-start-2 col-span-12 sm:col-span-10 grid-cols-12 px-4 sm:px-0 py-4">
       <div className="flex w-full lg:w-auto justify-between items-center">
-        <LogoIcon className="w-[123px] lg:w-[145px] h-[32px] lg:h-[38px] mr-10"></LogoIcon>
-
+        <Link href="#home" className="cursor-pointer">
+          <LogoIcon className="w-[123px] lg:w-[145px] h-[32px] lg:h-[38px] mr-10"></LogoIcon>
+        </Link>
         <button
           className="relative w-5 h-3 block lg:hidden"
           onClick={() => setNavbarOpen(!navbarOpen)}

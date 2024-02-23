@@ -2,6 +2,7 @@ import { footer } from "@/constants/Footer";
 import LogoIcon from "@/ui/icons/LogoIcon";
 import Button from "../general/Button";
 import NewBadge from "../badges/NewBadge";
+import Link from "next/link";
 
 export default function Footer({
   openModal,
@@ -53,7 +54,9 @@ export default function Footer({
       </div>
       <hr className="col-span-12 mt-12 sm:mt-16 mb-8 border-border-secondary" />
       <div className="flex flex-col sm:flex-row justify-between col-span-12">
-        <LogoIcon width={145} height={38}></LogoIcon>
+        <Link href="#home" className="cursor-pointer">
+          <LogoIcon width={145} height={38}></LogoIcon>
+        </Link>
         <p className="text-text-quaternary mt-6 sm:mt-0">
           © 2077 Untitled UI. All rights reserved.
         </p>
