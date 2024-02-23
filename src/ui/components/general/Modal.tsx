@@ -25,7 +25,10 @@ export default function Modal({
   };
 
   return (
-    <main className="fixed overflow-auto h-screen flex justify-center z-20 inset-0 bg-black bg-opacity-25 backdrop-blur-sm">
+    <main
+      onClick={handleBackdropClick}
+      className="fixed overflow-auto h-screen flex justify-center z-20 inset-0 bg-black bg-opacity-25 backdrop-blur-sm"
+    >
       <div className="my-auto">
         <div className="w-[calc(100%-32px)] max-w-md m-4 p-4 h-[540px] text-text-primary bg-bg-primary rounded-2xl">
           <header className="flex justify-between items-center px-4">

@@ -18,7 +18,7 @@ export default function AccordionItem({
           setAccordionOpen(!accordionOpen);
         }}
       >
-        <h6 className="w-fit text-lg font-medium text-text-primary">
+        <h6 className="w-fit text-lg text-left font-medium text-text-primary">
           {" "}
           {title}{" "}
         </h6>

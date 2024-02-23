@@ -29,9 +29,18 @@ export default function Reviews() {
         <div className="flex flex-col col-span-12 lg:col-span-7 justify-center px-6 sm:px-10 md:px-14 py-10 md:py-14 lg:p-16">
           <ul className="flex space-x-1 mb-4 sm:mb-5 md:mb-6">
             {[...Array(5)].map((_, index) => (
-              <li key={index}>
-                <StarIcon width={20} height={20}></StarIcon>
-              </li>
+              <ScrollRevealContainer
+                id={`review-star-${index}`}
+                origin="bottom"
+                distance="20px"
+                duration={600}
+                delay={400 + 100 * index}
+                key={index}
+              >
+                <li>
+                  <StarIcon width={20} height={20}></StarIcon>
+                </li>
+              </ScrollRevealContainer>
             ))}
           </ul>
           <h2 className="text-2xl sm:text-3xl xl:text-4xl font-medium text-text-brand-primary">
